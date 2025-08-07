@@ -1,0 +1,73 @@
+/* Image and Description */
+.bg-overlay-section {
+  position: relative;
+  overflow: hidden;
+  min-height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-img-container {
+  background-image: url("/image/konsond img.png");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.overlay-content {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+  width: 70%;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+/* Heading */
+.infrastructure-container h2 {
+  color: #393185;
+}
+.text-heading hr {
+  color: #393185;
+  border: 0.2px solid #393185;
+  opacity: 0.82;
+}
+.text-heading p {
+  font-size: 21px;
+  font-weight: 500;
+  color: #393185;
+}
+/* Feature List */
+.feature-container {
+  margin: 0px auto;
+}
+.feature-container i {
+  color: #393185;
+  font-weight: 700;
+}
+.features {
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+.features:hover{
+  transform: scale(1.03);
+ background: #39318595;
+}
+
+/* .hover-scale:hover {
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+}
+.hover-shadow:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.transition {
+  transition: all 0.3s ease-in-out;
+} */

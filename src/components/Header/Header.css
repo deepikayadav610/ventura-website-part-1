@@ -1,0 +1,127 @@
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 250px;
+  height: 100vh;
+  background-color: #393185;
+  padding-top: 70px;
+  z-index: 1050;
+  transition: all 0.3s ease;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar .nav-link {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.nav-link:hover {
+  font-weight: bold;
+}
+
+.bg-social {
+  background-color: #393185;
+  color: #fff;
+  position: relative;
+  z-index: 998;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  font-size: 20px;
+}
+.bg-social.hide {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
+.bg-social i {
+  color: #fff;
+}
+.bg-navbar {
+  width: 100%;
+  position: sticky !important;
+  top: 0;
+  z-index: 999 !important;
+  background-color: #39318595;
+}
+
+.contact-info {
+  flex-wrap: wrap;
+}
+/* Mega menu styling */
+.nav-item {
+  list-style-type: none;
+  position: relative;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* dropdown */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100vw;
+  background: #393185;
+  padding: 20px 40px;
+  z-index: 1050;
+  border-top: 3px solid #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.mega-column {
+  min-width: 200px;
+  margin-right: 20px;
+}
+
+.dropdown-item {
+  color: #ffffff;
+  background-color: transparent;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #ffffff;
+  color: #393185;
+}
+
+.dropdown-item.active {
+  background-color: #ffffff;
+  color: #393185;
+}
+
+.dropdown-item.active:hover {
+  background-color: #393185;
+  color: #ffffff;
+}
+
+.text-heading {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.7rem;
+}
+
+/* responsive */
+@media only screen and (max-width: 480px) {
+  .middle-logo {
+    max-height: 40px !important;
+  }
+  .product-container {
+    width: 85% !important;
+  }
+}

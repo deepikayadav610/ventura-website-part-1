@@ -1,0 +1,122 @@
+/* top-section */
+.enquiry-container h1 {
+  color: #393185;
+}
+.enquiry-container img {
+  border-radius: 10px;
+  border: 5px solid #393185;
+}
+.horizontal-heading {
+  width: 150px;
+  border: 2px solid #393185;
+  opacity: 0.8;
+}
+
+/* enquiry form */
+.enquiry-form {
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #e3dcff;
+  box-shadow: 0 12px 40px rgba(57, 49, 133, 0.12);
+  transition: all 0.3s ease-in-out;
+  padding: 2rem;
+  position: relative;
+}
+
+.enquiry-form input,
+.enquiry-form select,
+.enquiry-form textarea {
+  border-radius: 8px;
+  border: 1px solid #c3bdf4;
+  padding: 0.75rem 1rem;
+  padding-left: 2.5rem; 
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  color: #393185;
+}
+
+.enquiry-form input:focus,
+.enquiry-form select:focus,
+.enquiry-form textarea:focus {
+  border-color: #393185;
+  box-shadow: 0 0 0 0.15rem rgba(57, 49, 133, 0.25);
+  outline: none;
+}
+
+.enquiry-form select option {
+  background-color: #fff;
+  color: #393185;
+  padding: 0.5rem;
+  font-size: 15px;
+}
+
+.enquiry-form select option:hover {
+  background-color: #c3bdf4;
+  color: #fff;
+}
+
+.enquiry-form button {
+  background-color: #393185;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 2rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: 500;
+}
+
+.enquiry-form button:hover {
+  background-color: #2d2570;
+  transform: translateY(-2px);
+}
+
+.enquiry-form h2 {
+  color: #393185;
+  font-weight: 600;
+  font-size: 28px;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.line-hr {
+  margin: 10px;
+  border: 0.75px solid #393185;
+  opacity: 0.78;
+  text-align: center;
+}
+
+.enquiry-form input::placeholder,
+.enquiry-form textarea::placeholder,
+.enquiry-form select {
+  color: #393185;
+  font-weight: 400;
+}
+
+.enquiry-form .form-icon {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  color: #393185;
+  font-size: 18px;
+  pointer-events: none;
+}
+
+.selected-grade-tag {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.grade-selected{
+  padding: 10px 15px;
+}
+.select-shape{
+  padding:5px 10px ;
+}
+.close-btn{
+  color: white ;
+  background-color: rgb(243, 55, 55) !important;
+}

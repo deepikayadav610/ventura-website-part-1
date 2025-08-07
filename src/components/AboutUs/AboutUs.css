@@ -1,0 +1,135 @@
+/* about banner */
+.about-banner {
+  width: 100%;
+}
+.about-banner {
+  margin: 0px auto;
+  width: 95%;
+  height: 60vh;
+}
+.about-banner .bg-video {
+  border: 5px solid #393185;
+  border-radius: 20px;
+}
+
+/* about content */
+.about-content {
+  width: 90%;
+  margin: 25px auto;
+}
+.about-content h2 {
+  color: #393185;
+}
+.about-content p {
+  font-size: 18px;
+}
+.about-content p strong {
+  color: #393185;
+}
+
+/* vision-mission */
+.vision-mission-section {
+  background-color: #393185;
+}
+
+.vision-mission-section h2 {
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+.vision-mission-section hr {
+  border: 2px solid #ffffff;
+  opacity: 0.82;
+}
+.vision-mission-section img {
+  filter: brightness(0) saturate(100%) invert(30%) sepia(50%) saturate(250%)
+    hue-rotate(190deg);
+}
+
+.vision-mission-section h4 {
+  color: #393185;
+}
+/* our management */
+.card-footer {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  margin-top: 20px;
+  position: relative;
+}
+
+.quote-text {
+  color: #393185;
+}
+
+.card img {
+  margin-top: -40px;
+}
+.management-container h2 {
+  color: #393185;
+}
+.heading {
+  margin: 20px auto;
+  width: 180px;
+  color: #393185;
+  border: 2px solid #393185;
+  opacity: 0.82;
+}
+
+/* team section */
+.our-team-section {
+  border-radius: 20px;
+  padding: 40px 15px;
+  background-color: #f8f9fa;
+}
+
+.our-team-section hr {
+  width: 90px;
+}
+
+.our-team-section h2 {
+  color: #393185;
+}
+
+.team-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 30px 15px;
+  box-shadow: 0 6px 20px rgba(57, 49, 133, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(57, 49, 133, 0.15);
+}
+
+.team-icon i {
+  font-size: 50px;
+  color: #393185;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.team-card:hover .team-icon i {
+  transform: scale(1.2);
+  color: #5b52d6;
+}
+
+.team-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #273F4F;
+  margin-bottom: 10px;
+}
+
+.team-desc {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+@media (max-width: 767px) {
+  .vision-mission-section .row > div {
+    margin-bottom: 20px;
+  }
+}

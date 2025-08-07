@@ -1,0 +1,73 @@
+.quality-hero img {
+  max-height: 420px;
+  object-fit: cover;
+}
+
+/* Why Quality Matters  */
+.quality-matter h2 {
+  color: #393185;
+  font-weight: 600;
+}
+
+.quality-matter hr {
+  color: #393185;
+  border: 0.2px solid #393185;
+}
+.quality-matter-card {
+  flex-wrap: wrap;
+}
+.quality-matter-card .card {
+  transition:  transform 0.5s ease;
+}
+.quality-matter-card img{
+  width: 30px;
+}
+.quality-matter-card .card:hover{
+  transform: scale(1.07);
+  border: 1px solid #393185;
+}
+/* Certification Section */
+.certification-section {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.certification-content h3 {
+  color: #393185;
+  font-weight: 600;
+  text-align: center;
+}
+.certification-content hr {
+  color: #393185;
+  border: 0.2px solid #393185;
+}
+.certification-content .quality-list {
+  background-color: #393185;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+}
+.certification-content .quality-list:hover {
+  color: #393185;
+  background-color: #fff;
+  font-weight: 700;
+}
+
+/* Associations Section */
+.bg-associations {
+  background-color: #39318595;
+}
+.logo-associations img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  transition: filter 0.3s ease, transform 0.3s ease;
+  height: 100px;
+}
+
+.logo-associations img:hover {
+  transform: scale(1.1);
+}

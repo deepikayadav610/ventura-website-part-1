@@ -1,0 +1,377 @@
+body {
+  background: #c3bdf450;
+}
+
+.video-banner {
+  position: relative;
+  width: 100%;
+  height: 82vh;
+  overflow: hidden;
+}
+
+.bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.overlay h1 {
+  font-size: 3.2rem;
+}
+
+.overlay h1 span {
+  font-size: 2rem;
+}
+
+.welcome-content h2 {
+  color: #393185;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.welcome-line {
+  width: 150px;
+  border: 2px solid #393185;
+  opacity: 0.82;
+}
+
+.card-bg {
+  background: linear-gradient(to right, #393185 50%, #c3bdf498 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: background-position 0.5s ease;
+  border: none;
+  color: #393185;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-bg:hover {
+  background-position: left bottom;
+}
+
+.card-bg .card-text i {
+  transition: transform 0.4s ease;
+}
+
+.card-bg:hover .card-text i {
+  transform: scale(1.2) rotate(5deg);
+}
+
+.card-bg:hover .card-text {
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+/* quality & infrastructure */
+
+.quality-infra {
+  background: #a5a2c3;
+}
+
+.quality-infra h2 span {
+  color: #393185;
+}
+
+.heading-line {
+  width: 250px;
+  margin: 20px auto;
+  border: 2px solid #ffffff;
+  opacity: 0.82;
+}
+
+.quality-infra h5 {
+  color: #393185;
+}
+
+.quality-card,
+.infra-card {
+  position: relative;
+  height: 330px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  border-radius: 12px;
+}
+
+.quality-card {
+  background-image: url("/image/quality-banner.jpg");
+}
+
+.quality-card .quality-link,
+.infra-card .infra-link {
+  background-color: #393185;
+  border-radius: 7px;
+}
+.quality-card .quality-link:hover {
+  background-color: transparent;
+  border: 1px solid #393185;
+}
+
+.infra-card .infra-link:hover {
+  background-color: transparent;
+  border: 1px solid #393185;
+}
+
+.infra-card {
+  background-image: url("/image/infrastructure-4.png");
+}
+
+.quality-card::before,
+.infra-card::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.quality-card:hover,
+.infra-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+.card-overlay {
+  text-align: justify;
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  width: 50%;
+}
+
+/* product section */
+.product-container {
+  width: 75%;
+  margin: 0px auto;
+  overflow: visible !important;
+}
+.product-container h2 {
+  color: #393185;
+}
+
+.product-container hr {
+  color: #393185;
+}
+
+.heading-product {
+  width: 120px;
+  margin: 0px auto;
+  border: 2px solid #393185;
+  opacity: 0.82;
+}
+
+.product-swiper {
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  height: auto !important;
+}
+
+.product-tile {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.product-tile:hover {
+  transform: translateY(-6px);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.product-tile:hover .overlay {
+  background: rgba(57, 49, 133, 0.42);
+}
+
+.overlay h5 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.overlay p {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  color: #ddd;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #393185 !important;
+  top: 40%;
+  width: 50px !important;
+  height: 50px !important;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.swiper-button-prev {
+  left: 42% !important;
+}
+
+.swiper-button-next {
+  right: 42% !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 30px !important;
+  font-weight: bold;
+}
+.swiper-pagination-bullets {
+  bottom: 20px !important;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  top: 86% !important;
+}
+.swiper-container,
+.swiper {
+  width: 100%;
+  overflow: visible;
+}
+.swiper-horizontal {
+  height: 300px;
+}
+
+/* what we do  */
+.what-we-do {
+  background-color: #f7f6f9;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #393185;
+}
+
+
+.section-text {
+  text-align: justify;
+  line-height: 1.8;
+  color: #333;
+}
+.what-we-do img{
+  width: 450px;
+  height: auto;
+}
+
+/* suppliers section */
+.suppliers-section {
+  background-color: #f8f9fa;
+}
+
+.section-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #393185;
+  position: relative;
+}
+
+.supplier-logo {
+  width: 170px;
+  transition: filter 0.3s ease, transform 0.3s ease;
+  border: 1px solid #393185;
+  border-radius: 15px;
+}
+
+.supplier-logo:hover {
+  transform: scale(1.2);
+}
+
+/* responsive */
+@media only screen and (max-width: 480px) {
+  .overlay h1 {
+    font-size: 2.6rem;
+  }
+  .overlay h1 span {
+    font-size: 1.7rem;
+  }
+  .swiper-button-prev {
+    left: 12% !important;
+  }
+
+  .swiper-button-next {
+    right: 12% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-content p{
+    font-size: 18px !important;
+  }
+  .section-title {
+    text-align: center;
+  }
+
+  .section-text {
+    text-align: justify;
+    font-size: 18px !important;
+    padding: 0 10px;
+  }
+
+  .what-we-do img {
+    margin-bottom: 1.5rem;
+  }
+  .swiper-button-prev {
+    left: 28% !important;
+  }
+
+  .swiper-button-next {
+    right: 28% !important;
+  }
+  .product-container {
+    width: 87%;
+}
+}
