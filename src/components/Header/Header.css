@@ -118,10 +118,18 @@
 
 /* responsive */
 @media only screen and (max-width: 480px) {
+  .contact-info a,
+  .contact-info span{
+    font-size: 14px;
+  }
+  .bg-social .gap-3 {
+    gap: 0.5rem !important;
+}
   .middle-logo {
     max-height: 40px !important;
   }
   .product-container {
     width: 85% !important;
   }
+
 }

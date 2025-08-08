@@ -133,3 +133,63 @@
     margin-bottom: 20px;
   }
 }
+@media (max-width: 480px) {
+  .vision-mission-section .row > div {
+    margin-bottom: 20px;
+  }
+  /* About Content */
+  .about-content .py-5{
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  }
+  .about-content h2{
+    font-size: 21px;
+  }
+  .heading {
+    margin: 10px auto;
+    width: 150px;
+    border: 1px solid #393185 ;
+}
+.about-content p {
+    font-size: 14px;
+}
+
+/* Vision-Mission  */
+.vision-mission-section h2 {
+  font-size: 21px;
+}
+.vision-mission-section .mb-5
+ {
+    margin-bottom: 1.5rem !important;
+}
+.vision-mission-section h4 {
+  font-size: 19px;
+}
+.vision-mission-section .fs-2 {
+    font-size: calc(1.225rem + .9vw) !important;
+}
+.vision-mission-section .fs-6 {
+    font-size: 0.8rem !important;
+}
+.vision-mission-section .g-4{
+    --bs-gutter-y: 0.2rem;
+}
+.vision-mission-section .mt-5
+ {
+    margin-top: 0.5rem !important;
+}
+
+/* management section */
+.management-container h2{
+  font-size: 21px;
+}
+.management-container .fs-5
+ {
+    font-size: 1rem !important;
+}
+/* our-team section */
+.our-team-section .col-5 {
+    flex: 0 0 100%;
+    width: 41.66666667%;
+}
+}

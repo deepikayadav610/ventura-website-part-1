@@ -16,3 +16,7 @@ h6 {
 p {
   font-family: "Open Sans", sans-serif;
 }
+body, html{
+  overflow-x: clip
+  ;
+}

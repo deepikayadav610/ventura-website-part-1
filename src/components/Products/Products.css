@@ -1,41 +1,6 @@
-/* .hero-section {
-  margin-top: 5rem;
-  height: 75vh;
-  position: relative;
-}
-
-.carousel-item {
-  height: 70vh;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-.overlay {
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-}
-
-.carousel-item .container {
-  position: relative;
-  z-index: 2;
-}
-
-.btn-outline-light:hover {
-  background-color: #fff;
-  color: #393185;
-  border-color: #fff;
-}
-
-.product-content{
-  flex-direction: row;
-} */
-
 .hero-section {
   height: 70vh;
-  min-height: 400px; 
+  min-height: 400px;
   position: relative;
   overflow: hidden;
 }
@@ -71,24 +36,6 @@
   border-color: #fff;
 }
 
-@media (max-width: 768px) {
-  .carousel-caption-static h1 {
-    font-size: 1.8rem;
-  }
-
-  .carousel-caption-static p {
-    font-size: 1rem;
-  }
-
-  .hero-section {
-    height: 60vh;
-  }
-
-  .carousel-item {
-    height: 60vh;
-  }
-}
-
 /* product overview */
 .product-overview-section h2,
 .stretched-link {
@@ -116,4 +63,48 @@
 
 .stretched-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .carousel-caption-static h1 {
+    font-size: 1.8rem;
+  }
+
+  .carousel-caption-static p {
+    font-size: 1rem;
+  }
+
+  .hero-section {
+    height: 60vh;
+  }
+
+  .carousel-item {
+    height: 60vh;
+  }
+}
+@media (max-width: 480px) {
+  .carousel-caption-static {
+    width: 92%;
+  }
+  .carousel-caption-static h1 {
+    font-size: 1.3rem;
+  }
+
+  .carousel-caption-static p {
+    font-size: 0.9rem;
+  }
+  .carousel-caption-static a{
+    font-size: 15px;
+  }
+  .carousel-caption-static .px-4 {
+    padding-right: 1.2rem !important;
+    padding-left: 1.2rem !important;
+  }
+  /* product types */
+  .product-overview-section h2, .stretched-link {
+    font-size: 21px;
+}
+.product-overview-section .mb-4 {
+    margin-bottom: 0.6rem !important;
+}
 }

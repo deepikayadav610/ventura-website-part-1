@@ -188,8 +188,7 @@ export default function Home() {
             <img
               src="/image/steel forging.png"
               alt="Ventura Company"
-              className="img-fluid"
-              style={{ width: 400, height: 400 }}
+              className="img-fluid" 
             />
           </div>
         </div>
@@ -216,7 +215,6 @@ export default function Home() {
           <div className="col-12 col-md-6 col-lg-5 " data-aos="fade-right">
             <div className="card quality-card text-white border-0">
               <div className="card-overlay d-flex flex-column justify-content-center align-items-start p-4">
-                <i className="bi bi-patch-check-fill fs-1 text-primary mb-3"></i>
                 <h4 className="fw-semibold fs-2 mb-2">Quality</h4>
                 <p className="fs-6">
                   At Ventura Alloy & Steels, every member of our team—from
@@ -237,7 +235,6 @@ export default function Home() {
           <div className="col-12 col-md-6 col-lg-5" data-aos="fade-left">
             <div className="card infra-card text-white border-0">
               <div className="card-overlay d-flex flex-column justify-content-center align-items-start p-4">
-                <i className="bi bi-building fs-1 text-success mb-3"></i>
                 <h4 className="fw-semibold fs-2 mb-2">Infrastructure</h4>
                 <p className="fs-6">
                   Our 12,000-square-foot headquarters in Bhiwandi is equipped
