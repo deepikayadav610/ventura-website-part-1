@@ -56,18 +56,29 @@
 .features {
   transition: filter 0.3s ease, transform 0.3s ease;
 }
-.features:hover{
+.features:hover {
   transform: scale(1.03);
- background: #39318595;
+  background: #39318595;
 }
-
-/* .hover-scale:hover {
-  transform: scale(1.02);
-  transition: all 0.3s ease-in-out;
+@media screen and (max-width: 480px) {
+  .infrastructure-container .overlay-content p {
+    font-size: 0.86rem;
+  }
+  .infrastructure-container h2 {
+    font-size: 1.5rem;
+  }
+  .text-heading p {
+    font-size: 0.96rem;
+    margin-bottom: 1rem !important;
+  }
+  .text-heading {
+    padding-bottom: 0.1rem;
+    margin-bottom: 0.2rem;
 }
-.hover-shadow:hover {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+.feature-container .fs-3{
+  font-size: 1rem !important;
 }
-.transition {
-  transition: all 0.3s ease-in-out;
-} */
+.feature-container span{
+  font-size: 0.89rem !important;
+}
+}

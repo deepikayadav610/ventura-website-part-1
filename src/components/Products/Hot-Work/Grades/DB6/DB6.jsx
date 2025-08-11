@@ -163,25 +163,6 @@ export default function DB6() {
       </section>
 
       {/* size-range */}
-      {/* <section className="size-range">
-        <h3>Size Range</h3>
-        <div className="size-cards">
-          <div className="size-card">
-            <h4>Rounds</h4>
-            <p>
-              Diameter: <strong>60 to 1000 mm</strong>
-            </p>
-          </div>
-          <div className="size-card">
-            <h4>Blocks</h4>
-            <p>
-              Thickness: <strong>125 to 1000 mm</strong>
-              <br />
-              Width: <strong>130 to 1600 mm</strong>
-            </p>
-          </div>
-        </div>
-      </section> */}
       <section className="size-range">
         <h3>Size Range</h3>
         <table className="size-table">
@@ -234,52 +215,237 @@ export default function DB6() {
         </div>
       </section>
 
-      {/* Key Technical Specs */}
-      {/* <section className="technical-specs">
-        <div className="spec-block">
-          <h4>Hardness & Heat Treatment</h4>
-          <ul>
-            <li>Delivered hardness: up to 240 HB</li>
-            <li>
-              Quenched & tempered condition: 370–410 HB (round), 355–400 HB
-              (square/flat)
-            </li>
-          </ul>
-        </div>
-        <div className="spec-block">
-          <h4>Mechanical Attributes</h4>
-          <ul>
-            <li>Upgraded benchmark over DIN 2713 for enhanced performance</li>
-            <li>
-              Excellent impact strength & wear resistance over extensive use
-              cycles
-            </li>
-          </ul>
-        </div>
-      </section> */}
-
-      {/* Applications */}
-      {/* <section className="applications">
-        <h3>Typical Applications</h3>
-        <ul>
-          <li>
-            Heavy-duty forging dies (<em>drop, close die</em>) for mechanical
-            presses & hammers
-          </li>
-          <li>Die moulds, shoe blocks, ejector plates, and retainers</li>
-          <li>Shearing blades, plastic mould support plates, tool holders</li>
-        </ul>
-      </section> */}
-
-      {/* Process Route */}
-      {/* <section className="process-route">
-        <h3>Processing Pathway (EAF → LF → VD ...)</h3>
+      {/* Steel properties */}
+      <section className="steel-properties">
+        <h2>Steel Properties</h2>
         <p>
-          Melted in Electric Arc Furnace (EAF), followed by Ladle Furnace (LF),
-          Vacuum Degassing (VD), upset forging, annealing, rough turn/mill, oil
-          quenching, double tempering, finishing.
+          The exceptional hot work pre-solidified tool steel has great toughness
+          and high wear resistance. DB6 die steel is generally provided in hard,
+          quenched, tempered, and annealed condition, and in strengthened
+          condition in exceptional cases. Normally its working hardness is
+          <strong> 360–430 BHN</strong>. This steel grade is the updated type of
+          DIN 2713 for higher efficiency and performance.
         </p>
-      </section> */}
+      </section>
+
+      {/* applications */}
+      <section className="applications">
+        <h2>Applications</h2>
+        <p>
+          Dies for specially drop and close die forgings for hammers &
+          mechanical presses, die moulds, shoe blocks, die holder, piston rods,
+          bolster, cranks, cassettes, plastic moulds, shearing blades, tools,
+          etc.
+        </p>
+      </section>
+
+      {/* Thermal properties */}
+      <section className="thermal-properties">
+        <h2 className="thermal-section-title">Thermal Properties</h2>
+
+        <div className="row">
+          <div className="col-md-6">
+            <div className="property-card mb-3">
+              <h4>Coefficient of Thermal Expansion</h4>
+              <table className="table table-bordered ">
+                <thead>
+                  <tr>
+                    <th>Temperature (°C)</th>
+                    <th>10¯⁶ m / (m*K)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>20-100</td>
+                    <td>12.1</td>
+                  </tr>
+                  <tr>
+                    <td>20-200</td>
+                    <td>13.1</td>
+                  </tr>
+                  <tr>
+                    <td>20-300</td>
+                    <td>13.2</td>
+                  </tr>
+                  <tr>
+                    <td>20-400</td>
+                    <td>13.5</td>
+                  </tr>
+                  <tr>
+                    <td>20-500</td>
+                    <td>14.1</td>
+                  </tr>
+                  <tr>
+                    <td>20-600</td>
+                    <td>14.3</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div className="col-md-6">
+            <div className="property-card mb-3">
+              <h4>Thermal Conductivity</h4>
+              <table className="table table-bordered ">
+                <thead>
+                  <tr>
+                    <th>Temperature (°C)</th>
+                    <th>W / (m*K)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>20</td>
+                    <td>35.0</td>
+                  </tr>
+                  <tr>
+                    <td>350</td>
+                    <td>39.0</td>
+                  </tr>
+                  <tr>
+                    <td>700</td>
+                    <td>36.0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* heat treatment */}
+      <section className="heat-treatment">
+        <h2 className="section-title">Heat Treatment</h2>
+
+        <div className="row">
+          {/* Basic Heat Treatment Data */}
+          <div className="col-md-6">
+            <div className="heat-card mb-3">
+              <h4>Heat Treatment Steps</h4>
+              <table className="table table-bordered">
+                <tbody>
+                  <tr>
+                    <th>Soft Annealing °C</th>
+                    <td>650-710</td>
+                  </tr>
+                  <tr>
+                    <th>Cooling</th>
+                    <td>Furnace</td>
+                  </tr>
+                  <tr>
+                    <th>Hardness HB</th>
+                    <td>max. 240</td>
+                  </tr>
+                  <tr>
+                    <th>Hardening °C</th>
+                    <td>840-880 / 860-900</td>
+                  </tr>
+                  <tr>
+                    <th>Quenching</th>
+                    <td>Oil / Air</td>
+                  </tr>
+                  <tr>
+                    <th>Hardness after Quenching HRC</th>
+                    <td>57 / 55</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* Tempering Data */}
+          <div className="col-md-6">
+            <div className="heat-card mb-3">
+              <h4>Tempering (°C after quenching)</h4>
+              <table className="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Temp (°C)</th>
+                    <th>In Oil – HRC</th>
+                    <th>In Air – HRC</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>100</td>
+                    <td>56</td>
+                    <td>54</td>
+                  </tr>
+                  <tr>
+                    <td>200</td>
+                    <td>54</td>
+                    <td>52</td>
+                  </tr>
+                  <tr>
+                    <td>300</td>
+                    <td>52</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td>400</td>
+                    <td>49</td>
+                    <td>47</td>
+                  </tr>
+                  <tr>
+                    <td>450</td>
+                    <td>47</td>
+                    <td>45</td>
+                  </tr>
+                  <tr>
+                    <td>500</td>
+                    <td>46</td>
+                    <td>43</td>
+                  </tr>
+                  <tr>
+                    <td>550</td>
+                    <td>43</td>
+                    <td>40</td>
+                  </tr>
+                  <tr>
+                    <td>600</td>
+                    <td>38</td>
+                    <td>36</td>
+                  </tr>
+                  <tr>
+                    <td>650</td>
+                    <td>34</td>
+                    <td>32</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* stocking partner */}
+      <section className="stocking-partners py-5">
+        <div className="container text-center">
+          <h2 className="section-title mb-4">Stocking Partners</h2>
+          <p className="lead">
+            We keep the materials from <strong>Germany</strong>,
+            <strong> Japan</strong> and <strong>China</strong>.
+          </p>
+          <div className="partner-flags mt-4">
+            <img
+              src="/image/german-flag.jpg"
+              alt="Germany"
+              className="flag-img mx-3"
+            />
+            <img
+              src="/image/japan-flag.jpeg"
+              alt="Japan"
+              className="flag-img mx-3"
+            />
+            <img
+              src="/image/china-flag.png"
+              alt="China"
+              className="flag-img mx-3"
+            />
+          </div>
+        </div>
+      </section>
 
       {/* Get Quote CTA */}
       <div className="cta-block">
@@ -288,7 +454,6 @@ export default function DB6() {
         </Link>
         {/* <span>MOQ: 200 kg | Price: ₹135/kg*</span> */}
       </div>
-      
     </div>
   );
 }

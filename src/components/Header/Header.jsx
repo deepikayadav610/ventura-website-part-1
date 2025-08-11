@@ -225,13 +225,13 @@ export default function Header() {
                     onClick={() => handleNavClick("/products/hot-work/H13")}
                     className="dropdown-item "
                   >
-                    H13 / 2344
+                    H13 / AISI H 13 / DIN 2344
                   </button>
                   <button
                     onClick={() => handleNavClick("/products/hot-work/H11")}
                     className="dropdown-item "
                   >
-                    H11 / 2343
+                    H11 / AISI H 11 / DIN 2343
                   </button>
                   <button
                     onClick={() => handleNavClick("/products/hot-work/H21")}

@@ -1,17 +1,18 @@
 /* Hot work detail section */
 .hotwork-container {
   background: #fff;
-  padding: 2rem;
+  padding: 0.5rem;
   color: #2c2c2c;
 }
 
 .hotwork-hero {
-  text-align: center;
+  text-align: justify;
   padding-bottom: 1.5rem;
   border-bottom: 2px solid #e3dcff;
 }
 
 .hotwork-hero h1 {
+  text-align: center;
   color: #393185;
   font-size: 2.2rem;
 }
@@ -109,7 +110,6 @@
   font-weight: 500;
   transform: translateX(4px);
 }
-
 @media (min-width: 768px) {
   .hotwork-main.active .sidebar-wrapper {
     display: flex;
@@ -125,6 +125,13 @@
 }
 
 @media (max-width: 768px) {
+  .hotwork-container {
+    margin-top: 0rem;
+  }
+  .why-ventura h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.8rem !important;
+  }
   .sidebar-wrapper {
     min-width: 100%;
     transform: translateX(0) !important;
@@ -155,12 +162,23 @@
   }
 
   .hotwork-hero h1 {
-    margin-top: 3rem;
+    margin-top: 0.3rem;
     font-size: 1.8rem;
   }
 
   .hotwork-hero p {
     font-size: 16px;
     width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .hotwork-hero {
+    padding: 10px;
+  }
+  .hotwork-sidebar {
+    margin: 0px 5px;
+  }
+  .hotwork-main {
+    gap: 0rem;
   }
 }

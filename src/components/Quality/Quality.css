@@ -17,12 +17,12 @@
   flex-wrap: wrap;
 }
 .quality-matter-card .card {
-  transition:  transform 0.5s ease;
+  transition: transform 0.5s ease;
 }
-.quality-matter-card img{
+.quality-matter-card img {
   width: 30px;
 }
-.quality-matter-card .card:hover{
+.quality-matter-card .card:hover {
   transform: scale(1.07);
   border: 1px solid #393185;
 }
@@ -70,4 +70,63 @@
 
 .logo-associations img:hover {
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 480px) {
+  .quality-hero .display-6 {
+    font-size: calc(1.075rem + 1.5vw);
+  }
+  .quality-hero .py-5 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+  .quality-hero p {
+    font-size: 0.78rem;
+  }
+  .quality-matter {
+    padding-top: 1rem !important;
+    padding-bottom: 0rem !important;
+  }
+  .quality-matter h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0px !important;
+  }
+  .quality-matter hr {
+    margin-bottom: 1.5rem !important;
+  }
+  .quality-matter-card {
+    gap: 0rem !important;
+  }
+  .quality-matter-card h5 {
+    font-size: 1rem;
+  }
+  .quality-matter-card p {
+    font-size: 0.8rem;
+  }
+  .quality-matter-card .p-3 {
+    padding: 0.3rem !important;
+  }
+  .quality-statement .fs-5 {
+    font-size: 1rem !important;
+  }
+  .quality-statement {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+  .quality-cert {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+  .quality-cert ul {
+    padding-left: 0rem;
+  }
+  .quality-cert .mb-5 {
+    margin-bottom: 2rem !important;
+  }
+  .quality-cert li {
+    font-size: 0.87rem;
+  }
+  .logo-associations img {
+    height: 85px;
+  }
 }

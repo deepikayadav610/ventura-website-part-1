@@ -50,7 +50,7 @@ const Quality = () => {
       </section>
 
       {/* Quality Statement Block */}
-      <section className="bg-light py-5">
+      <section className="bg-light py-5 quality-statement">
         <div className="container">
           <blockquote className="blockquote text-center">
             <p className="fs-5 text-muted fst-italic" data-aos="fade-right">
@@ -66,7 +66,7 @@ const Quality = () => {
       </section>
 
       {/* Certification Section */}
-      <section className="container py-5">
+      <section className="container py-5 quality-cert">
         <div className="d-flex justify-content-center align-items-center certification-section gap-5">
           <div className="col-md-6 mb-4 mb-md-0">
             <img
