@@ -1,34 +1,48 @@
-/* Image and Description */
-.bg-overlay-section {
-  position: relative;
-  overflow: hidden;
-  min-height: 55vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.bg-img-container {
-  background-image: url("/image/konsond img.png");
-  background-size: cover;
-  background-position: center;
-  filter: brightness(0.5);
+/* Video Banner */
+.overlay-infrastructure {
+  height: 80vh;
+  width: 30%;
+  padding: 10px;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
 }
 
-.overlay-content {
+.video-banner-infrastructure {
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.video-banner-infrastructure .bg-video {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: relative;
   z-index: 2;
-  width: 70%;
-  font-size: 19px;
-  font-weight: 600;
+  padding: 1rem;
+}
+
+.overlay-infrastructure h1 {
+  font-size: 3rem;
+  margin: 0px 20px 20px 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.overlay-infrastructure p {
+  font-size: 1.12rem;
+  margin-bottom: 2rem;
 }
 
 /* Heading */
@@ -60,10 +74,21 @@
   transform: scale(1.03);
   background: #39318595;
 }
+
 @media screen and (max-width: 480px) {
-  .infrastructure-container .overlay-content p {
-    font-size: 0.86rem;
+  /* Video Banner */
+  .overlay-infrastructure {
+    width: 75%;
   }
+
+  .overlay-infrastructure h1 {
+    font-size: 2rem;
+  }
+
+  .overlay-infrastructure p {
+    font-size: 0.9rem;
+  }
+
   .infrastructure-container h2 {
     font-size: 1.5rem;
   }
@@ -74,11 +99,58 @@
   .text-heading {
     padding-bottom: 0.1rem;
     margin-bottom: 0.2rem;
+  }
+  .feature-container .fs-3 {
+    font-size: 1rem !important;
+  }
+  .feature-container span {
+    font-size: 0.89rem !important;
+  }
 }
-.feature-container .fs-3{
-  font-size: 1rem !important;
+
+@media (min-width: 481px) and (max-width: 780px) {
+  /* Video Banner */
+  .overlay-infrastructure {
+    width: 55%;
+    padding: 15px;
+  }
+
+  .overlay-infrastructure h1 {
+    font-size: 2.2rem;
+  }
+
+  .overlay-infrastructure p {
+    font-size: 1rem;
+  }
 }
-.feature-container span{
-  font-size: 0.89rem !important;
+
+@media (min-width: 481px) and (max-width: 780px) {
+  /* Video Banner */
+  .overlay-infrastructure {
+    width: 55%;
+    padding: 15px;
+  }
+
+  .overlay-infrastructure h1 {
+    font-size: 2.2rem;
+  }
+
+  .overlay-infrastructure p {
+    font-size: 1rem;
+  }
 }
+@media (min-width: 781px) and (max-width: 1211px) {
+  /* Video Banner */
+  .overlay-infrastructure {
+    width: 40%;
+    padding: 15px;
+  }
+
+  .overlay-infrastructure h1 {
+    font-size: 2.6rem;
+  }
+
+  .overlay-infrastructure p {
+    font-size: 1.1rem;
+  }
 }

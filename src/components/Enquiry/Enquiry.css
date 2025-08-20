@@ -11,7 +11,10 @@
   border: 2px solid #393185;
   opacity: 0.8;
 }
-
+.enquiry-container p,
+.enquiry-container li{
+  text-align: justify;
+}
 /* enquiry form */
 .enquiry-form {
   background: #fff;
@@ -119,4 +122,38 @@
 .close-btn{
   color: white ;
   background-color: rgb(243, 55, 55) !important;
+}
+
+.form-check-input:checked + .form-check-label {
+  font-weight: bold;
+  color: #393185;
+}
+.btn-outline-primary {
+  margin-left: 20px;
+  border-radius: 50px;
+  padding: 0.5rem 1.5rem;
+  border-color: #393185;
+  color: #393185;
+}
+
+.btn-outline-primary:hover {
+  border-color: #393185 !important;
+}
+
+.btn-outline-primary.active {
+  background-color: #2d2570 !important;
+  color: white;
+  border-color: #2d2570 !important;
+}
+.enquiry-form button {
+    background-color: #2d2570 !important;
+    color: #fff !important;
+    border: none;
+    border-radius: 6px;
+    padding: 0.6rem 2rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 500;
+}
+.form-label{
+  color: #393185;
 }

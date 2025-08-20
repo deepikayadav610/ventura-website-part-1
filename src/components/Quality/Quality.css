@@ -1,8 +1,29 @@
-.quality-hero img {
-  max-height: 420px;
-  object-fit: cover;
+.overlay-quality {
+  height: 80vh;
+  width: 14%;
+  padding: 10px;
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
 }
 
+.video-banner-quality {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.video-banner-quality .bg-video {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
 /* Why Quality Matters  */
 .quality-matter h2 {
   color: #393185;
@@ -73,15 +94,18 @@
 }
 
 @media screen and (max-width: 480px) {
+  .overlay-quality {
+    width: 54%;
+  }
   .quality-hero .display-6 {
-    font-size: calc(1.075rem + 1.5vw);
+    font-size: calc(1.375rem + 1.5vw);
   }
   .quality-hero .py-5 {
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
   }
   .quality-hero p {
-    font-size: 0.78rem;
+    font-size: 0.98rem;
   }
   .quality-matter {
     padding-top: 1rem !important;
@@ -128,5 +152,53 @@
   }
   .logo-associations img {
     height: 85px;
+  }
+}
+
+@media (min-width:481px) and (max-width: 780px) {
+  .overlay-quality {
+    width: 45%;
+  }
+  .quality-hero .display-6 {
+    font-size: calc(1.475rem + 1.5vw);
+  }
+  .quality-hero .py-5 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+  .quality-hero p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width:781px) and (max-width: 1211px) {
+  .overlay-quality {
+    width: 35%;
+  }
+  .quality-hero .display-6 {
+    font-size: calc(1.475rem + 1.5vw);
+  }
+  .quality-hero .py-5 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+  .quality-hero p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width:1212px) and (max-width: 1811px) {
+  .overlay-quality {
+    width: 22%;
+  }
+  .quality-hero .display-6 {
+    font-size: calc(1.475rem + 1.5vw);
+  }
+  .quality-hero .py-5 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+  .quality-hero p {
+    font-size: 1.3rem;
   }
 }

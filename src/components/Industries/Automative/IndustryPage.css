@@ -1,0 +1,183 @@
+/* ============================
+   INDUSTRY PAGE STYLING
+   ============================ */
+
+/* Hero Banners - unified smooth look */
+.industry-hero,
+.aerospace-hero,
+.tooling-hero,
+.infrastructure-hero,
+.plastics-hero {
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  color: #fff;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.industry-hero::after,
+.aerospace-hero::after,
+.tooling-hero::after,
+.infrastructure-hero::after,
+.plastics-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(39, 63, 79, 0.75),
+    rgba(39, 63, 79, 0.6)
+  );
+}
+
+/* Banner Specifics */
+.industry-hero {
+  background-image: url("/image/industries/automative-bg.png");
+}
+.aerospace-hero {
+  background-image: url("/image/industries/aerospace-background.jpg");
+}
+.tooling-hero {
+  background-image: url("/image/industries/tooling-bg.jpg");
+}
+.infrastructure-hero {
+  background-image: url("/image/industries/infrastructure-background1.jpg");
+}
+.plastics-hero {
+  background-image: url("/image/plastics-bg.jpg");
+}
+
+.industry-hero h1,
+.aerospace-hero h1,
+.tooling-hero h1,
+.infrastructure-hero h1,
+.plastics-hero h1 {
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: 700;
+  z-index: 2;
+  animation: fadeDown 0.8s ease;
+}
+
+.industry-hero p,
+.aerospace-hero p,
+.tooling-hero p,
+.infrastructure-hero p,
+.plastics-hero p {
+  position: relative;
+  color: #d7d7d7;
+  font-weight: 500;
+  max-width: 800px;
+  margin: 10px auto 0;
+  z-index: 2;
+  animation: fadeUp 0.8s ease;
+}
+
+/* Highlights Section */
+.highlight-box {
+  background: #393185;
+  color: #fff;
+  padding: 24px;
+  border-radius: 14px;
+  text-align: center;
+  transition: all 0.35s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.highlight-box:hover {
+  background:  #f8f9fa;
+  color: #000;
+  transform: translateY(-8px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+}
+
+.highlight-box h5 {
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+/* Steel Cards */
+.industry-steel-card {
+  background: #fff;
+  padding: 28px;
+  border-radius: 16px;
+  transition: all 0.35s ease;
+  height: 100%;
+  border: 1px solid #eee;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.industry-steel-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.15);
+}
+
+.industry-steel-card h4 {
+  color: #273f4f;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.industry-steel-card p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+  min-height: 80px;
+  margin-bottom: 0;
+}
+
+/* Smooth Animations */
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .industry-hero,
+  .aerospace-hero,
+  .tooling-hero,
+  .infrastructure-hero,
+  .plastics-hero {
+    height: 280px;
+    padding: 20px;
+  }
+
+  .industry-hero h1,
+  .aerospace-hero h1,
+  .tooling-hero h1,
+  .infrastructure-hero h1,
+  .plastics-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .industry-steel-card {
+    padding: 20px;
+  }
+}

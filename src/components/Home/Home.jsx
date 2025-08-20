@@ -9,7 +9,7 @@ import { useInView } from "react-intersection-observer";
 // Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-
+import IndustriesSection from "../Industries/Industries";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -47,7 +47,7 @@ export default function Home() {
 
   const [highlightsRef, highlightsInView] = useInView({
     triggerOnce: true,
-    threshold: 0.4, 
+    threshold: 0.4,
     rootMargin: "0px 0px -100px 0px",
   });
 
@@ -161,6 +161,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Industries section */}
+      <IndustriesSection />
+
       {/* welcome-section */}
       <div className="welcome-section container mt-5 py-4">
         <div className="row align-items-center g-4">
@@ -184,11 +187,11 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="col-md-6 text-end" data-aos="fade-in">
+          <div className="col-md-6 welcome-end text-end" data-aos="fade-in">
             <img
               src="/image/steel forging.png"
               alt="Ventura Company"
-              className="img-fluid" 
+              className="img-fluid"
             />
           </div>
         </div>
@@ -350,9 +353,9 @@ export default function Home() {
               data-aos-delay="100"
             >
               <img
-                src="/image/sail.png"
+                src="/image/dongbe-logo.png"
                 alt="Supplier 2"
-                className="img-fluid supplier-logo"
+                className="img-fluid supplier-logo text-center"
               />
             </div>
             <div

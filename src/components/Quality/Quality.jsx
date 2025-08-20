@@ -6,14 +6,18 @@ const Quality = () => {
     <>
       {/* Hero Section */}
       <section className="position-relative quality-hero">
-        <img
-          src="/image/quality-banner.jpg"
-          alt="Quality Banner"
-          className="img-fluid w-100"
-        />
-        <div className="position-absolute top-50 start-50 translate-middle text-white text-center bg-dark bg-opacity-50 px-5 py-5 rounded">
-          <h1 className="display-6 fw-bold">Committed to Certified Quality</h1>
-          <p className="mb-0">ISO 9001:2015 - Trusted Across Industries</p>
+        {/* video-banner */}
+        <div className="video-banner-quality">
+          <video autoPlay loop muted className="bg-video w-100">
+            <source src="/videoes/Website Quality Page.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div className="overlay-quality">
+            <h1 className="display-6 fw-bold">
+              Committed to Certified Quality
+            </h1>
+            <p className="mb-0">ISO 9001:2015 - Trusted Across Industries</p>
+          </div>
         </div>
       </section>
 
@@ -68,27 +72,41 @@ const Quality = () => {
       {/* Certification Section */}
       <section className="container py-5 quality-cert">
         <div className="d-flex justify-content-center align-items-center certification-section gap-5">
-          <div className="col-md-6 mb-4 mb-md-0">
-            <img
-              src="/image/quality-banner.jpg"
-              alt="Quality Certificate"
-              className="img-fluid rounded shadow"
-            />
+          <div className="col-md-3 mb-4 mb-md-0">
+            <a href="/image/certificates/ISO-Certificate-1.jpg">
+              <img
+                src="/image/certificates/ISO-Certificate-1.jpg"
+                alt="Quality Certificate"
+                className="img-fluid rounded shadow"
+              />
+            </a>
           </div>
           <div className="col-md-5 certification-content">
             <h3 className=" mb-3">Our Certification</h3>
             <hr className="mb-5" />
             <ul className="text-muted 1h-lg ">
-              <li className="quality-list text-center  list-unstyled mb-3" data-aos="zoom-in-up">
+              <li
+                className="quality-list text-center  list-unstyled mb-3"
+                data-aos="zoom-in-up"
+              >
                 ISO 9001:2015 Certified by DAS
               </li>
-              <li className="quality-list text-center  list-unstyled mb-3" data-aos="zoom-in-up">
+              <li
+                className="quality-list text-center  list-unstyled mb-3"
+                data-aos="zoom-in-up"
+              >
                 Includes QAP reports with every batch
               </li>
-              <li className="quality-list text-center  list-unstyled mb-3" data-aos="zoom-in-up">
+              <li
+                className="quality-list text-center  list-unstyled mb-3"
+                data-aos="zoom-in-up"
+              >
                 Comprehensive chemical & microstructure analysis
               </li>
-              <li className="quality-list text-center  list-unstyled mb-3" data-aos="zoom-in-up"> 
+              <li
+                className="quality-list text-center  list-unstyled mb-3"
+                data-aos="zoom-in-up"
+              >
                 Strict packaging and delivery standards
               </li>
             </ul>
@@ -99,7 +117,9 @@ const Quality = () => {
       {/* Associations Section  */}
       <section className="bg-associations py-4">
         <div className="container text-white text-center">
-          <h5 className="mb-4" data-aos="zoom-in-up">We are Proud Members of</h5>
+          <h5 className="mb-4" data-aos="zoom-in-up">
+            We are Proud Members of
+          </h5>
           <div className="row logo-associations justify-content-center">
             <div className="col-auto mx-3 my-3" data-aos="zoom-in-up">
               <img

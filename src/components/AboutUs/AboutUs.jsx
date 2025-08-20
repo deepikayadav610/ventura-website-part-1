@@ -54,7 +54,7 @@ const AboutUs = () => {
 
         {/* about-content */}
         <section className="about-content  mt-3">
-          <div className=" py-5">
+          <div className=" pt-5 pb-2">
             <h2
               className="mb-4 text-center fw-bold text-uppercase"
               data-aos="fade-up-right"
@@ -62,7 +62,7 @@ const AboutUs = () => {
               About Ventura Alloy & Steels
             </h2>
             <hr className="heading mb-2" data-aos="fade-up-right" />
-            <section className="py-5">
+            <section className="pt-5">
               <div className="row">
                 <div className="col-lg-12">
                   <p
@@ -280,19 +280,42 @@ const AboutUs = () => {
 
         {/* team section */}
         <section className="our-team-section container my-5" data-aos="fade-up">
-          <h2 className="text-center fw-bold">Our Team</h2>
-          <hr className="heading mb-5" />
+          <h2 className="text-center fw-bold">The Human Capital Behind Ventura’s Success</h2>
+          <hr className="heading " />
+          <p className="text-center mb-5">Skilled teams powering every step of our operations — from sourcing to delivery.</p>
 
           <div className="row g-4 px-3">
             {[
-              { title: "Sourcing Agents", icon: "bi-headset" },
-              { title: "Technicians", icon: "bi-person-gear" },
-              { title: "Quality Controllers", icon: "bi-award" },
-              { title: "Warehouse Personnel", icon: "bi-box-seam" },
-              { title: "Sales & Marketing", icon: "bi-bar-chart-steps" },
               {
-                title: "IT & Digital Infrastructure", icon:  "bi bi-laptop"
-              }
+                title: "Sourcing Agents",
+                icon: "bi-headset",
+                desc: "Ensuring timely and cost-effective procurement of quality materials.",
+              },
+              {
+                title: "Technicians",
+                icon: "bi-person-gear",
+                desc: "Maintaining precision and efficiency across operations and processes.",
+              },
+              {
+                title: "Quality Controllers",
+                icon: "bi-award",
+                desc: "Upholding global standards through rigorous inspection and testing.",
+              },
+              {
+                title: "Warehouse Personnel",
+                icon: "bi-box-seam",
+                desc: "Managing inventory and logistics for seamless order fulfillment.",
+              },
+              {
+                title: "Sales & Marketing",
+                icon: "bi-bar-chart-steps",
+                desc: "Driving business growth with customer-focused strategies and solutions.",
+              },
+              {
+                title: "IT & Digital Infrastructure",
+                icon: "bi bi-laptop",
+                desc: "Powering operations with secure technology, strategic digital marketing, data-driven insights, and a seamless web presence.",
+              },
             ].map((member, index) => (
               <div
                 className="col-5 col-md-4 col-lg-4"
@@ -304,10 +327,7 @@ const AboutUs = () => {
                     <i className={`bi ${member.icon}`}></i>
                   </div>
                   <h5 className="team-title">{member.title}</h5>
-                  <p className="team-desc">
-                    Skilled professionals ensuring timely and cost-effective
-                    procurement of quality materials.
-                  </p>
+                  <p className="team-desc">{member.desc}</p>
                 </div>
               </div>
             ))}

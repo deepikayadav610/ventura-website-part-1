@@ -144,6 +144,7 @@ export default function Header() {
             { to: "/quality", text: "Quality" },
             { to: "/infrastructure", text: "Infrastructure" },
             { to: "/certifications", text: "Certifications" },
+            { to: "/enquiry", text: "Enquiry" },
             { to: "/blog", text: "Blogs" },
             { to: "/careers", text: "Careers" },
             { to: "/contact", text: "Contact Us" },
@@ -237,19 +238,19 @@ export default function Header() {
                     onClick={() => handleNavClick("/products/hot-work/H21")}
                     className="dropdown-item "
                   >
-                    H21 / 2581
+                    H21 / AISI H21 / DIN 1.2581
                   </button>
                   <button
                     onClick={() => handleNavClick("/products/hot-work/H10")}
                     className="dropdown-item "
                   >
-                    H10 / 2365 / SKD7
+                    H10 / AISI H10 / DIN 1.2365 / SKD7
                   </button>
                   <button
                     onClick={() => handleNavClick("/products/hot-work/H12")}
                     className="dropdown-item "
                   >
-                    H12 / 2606
+                    H12 / AISI H12 / DIN 1.2606
                   </button>
                 </div>
 

@@ -70,7 +70,7 @@
 }
 .heading {
   margin: 20px auto;
-  width: 180px;
+  width: 40% !important;
   color: #393185;
   border: 2px solid #393185;
   opacity: 0.82;

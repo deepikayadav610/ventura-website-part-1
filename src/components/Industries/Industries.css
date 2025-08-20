@@ -1,0 +1,94 @@
+/* Industries Section */
+.industries-section {
+  background: #d9ceee;
+  border-radius: 12px;
+  padding: 60px 20px;
+}
+
+.industries-section h2 {
+  color: #393185;
+  font-size: 2rem;
+}
+
+.section-subtitle {
+  color: #555;
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.industry-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 25px 20px;
+  transition: all 0.35s ease-in-out;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Gradient overlay */
+.industry-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(6, 23, 252, 0.15), rgba(136, 141, 218, 0.15));
+  opacity: 0;
+  transition: opacity 0.35s ease-in-out;
+  border-radius: 16px;
+  z-index: 0;
+}
+
+.industry-card:hover::before {
+  opacity: 1;
+}
+
+.industry-card * {
+  position: relative;
+  z-index: 1;
+}
+
+.industry-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.industry-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #393185;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.industry-card:hover .industry-icon {
+  transform: scale(1.2);
+  color: #393185;
+}
+
+.industry-card h5 {
+  font-size: 1.15rem;
+  color: #393185;
+  margin-bottom: 8px;
+}
+
+.steel-tags {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #393185;
+  margin-bottom: 6px;
+}
+
+.industry-desc {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Mobile carousel tweaks */
+.carousel .industry-card {
+  margin: 0 auto;
+  max-width: 85%;
+}   
