@@ -60,29 +60,29 @@ section {
 /* standards section ends*/
 
 /* chemical composition */
-.composition table {
+.h13-composition table {
   width: 100%;
   border-collapse: collapse;
 }
-.composition th,
-.composition td {
+.h13-composition th,
+.h13-composition td {
   padding: 0.6rem;
   border: 1px solid #e3dcff;
   text-align: center;
   font-size: 18px;
 }
-.chemical-composition {
+.h13-chemical-composition {
   width: 40%;
 }
 .table-data {
   flex-wrap: wrap;
 }
-.name-table {
+.h13-name-table {
   width: 45%;
 }
 
 .spec-block,
-.composition table,
+.h13-composition table,
 .applications ul {
   background: #f5f5fc;
   padding: 1rem;
@@ -90,7 +90,7 @@ section {
 }
 
 .spec-block h4,
-.composition h3,
+.h13-composition h3,
 .applications h3 {
   color: #393185;
   margin-bottom: 0.6rem;

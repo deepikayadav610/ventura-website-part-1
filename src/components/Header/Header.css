@@ -68,7 +68,7 @@
   left: 0;
   width: 100vw;
   background: #393185;
-  padding: 20px 40px;
+  padding: 10px 40px;
   z-index: 1050;
   border-top: 3px solid #ffffff;
   display: flex;
@@ -79,7 +79,7 @@
 
 .mega-column {
   min-width: 200px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .dropdown-item {
@@ -87,7 +87,7 @@
   background-color: transparent;
   padding: 0.3rem 0.6rem;
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   transition: all 0.3s ease;
 }

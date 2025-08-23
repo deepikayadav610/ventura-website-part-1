@@ -103,6 +103,8 @@ body {
 }
 
 .quality-infra h5 {
+  margin: 0px auto;
+  width: 82%;
   color: #393185;
 }
 

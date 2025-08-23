@@ -161,9 +161,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Industries section */}
-      <IndustriesSection />
-
       {/* welcome-section */}
       <div className="welcome-section container mt-5 py-4">
         <div className="row align-items-center g-4">
@@ -255,6 +252,9 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Industries section */}
+      <IndustriesSection />
 
       {/* Products section */}
       <div className="product-container py-5" ref={productsRef}>

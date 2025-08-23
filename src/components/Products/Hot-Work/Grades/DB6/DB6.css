@@ -32,7 +32,7 @@ section {
 /* grades details section ends */
 
 /* overview-content */
-.overview-content{
+.overview-content {
   text-align: justify;
 }
 
@@ -65,33 +65,35 @@ section {
 /* standards section ends*/
 
 /* chemical composition */
-.composition table {
+.db6-composition table {
   width: 100%;
   border-collapse: collapse;
 }
-.name-table th,
-.name-table td {
+.db6-name-table th,
+.db6-name-table td {
   padding: 0.6rem;
   border: 1px solid #e3dcff;
   text-align: center;
   font-size: 18px;
 }
-.composition-table th,
-.composition-table td {
-  padding: 0.78rem !important ;
+.db6-composition-table th,
+.db6-composition-table td {
+  border: 1px solid #e3dcff;
+  text-align: center;
+  padding: 0.88rem !important ;
 }
-.chemical-composition {
+.db6-chemical-composition {
   width: 40%;
 }
 .table-data {
   flex-wrap: wrap;
 }
-.name-table {
+.db6-name-table {
   width: 45%;
 }
 
 .spec-block,
-.composition table,
+.db6-composition table,
 .applications ul {
   background: #f5f5fc;
   padding: 1rem;
@@ -99,7 +101,7 @@ section {
 }
 
 .spec-block h4,
-.composition h3,
+.db6-composition h3,
 .applications h3 {
   color: #393185;
   margin-bottom: 0.6rem;
@@ -206,7 +208,7 @@ section {
 .applications {
   margin-top: 2rem;
   padding: 1.5rem;
-  background-color: #f5f5fc; 
+  background-color: #f5f5fc;
   border-left: 4px solid #393185;
   border-radius: 8px;
 }
@@ -251,7 +253,7 @@ section {
 
 .property-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 15px #393185; 
+  box-shadow: 0 6px 15px #393185;
 }
 
 .property-card h4 {
@@ -351,7 +353,6 @@ section {
   transform: scale(1.1);
 }
 
-
 /* media queries */
 @media (max-width: 768px) {
   .grade-details {
@@ -441,7 +442,7 @@ section {
 }
 
 @media (max-width: 480px) {
- .grade-details h2 {
+  .grade-details h2 {
     font-size: 1.3rem;
   }
 

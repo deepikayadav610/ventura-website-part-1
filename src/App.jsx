@@ -26,6 +26,12 @@ import Tooling from "./components/Industries/Tooling/Tooling.jsx";
 import InfrastructureEnergy from "./components/Industries/Infrastructure/Infrastructure-energy.jsx";
 import Plastics from "./components/Industries/Plastics/Plastics.jsx";
 
+// Boron Steels
+import Boron from "./components/Products/Boron-Steel/boron-steel.jsx";
+import Boron10B21 from "./components/Products/Boron-Steel/Grades/10B21/10B21.jsx";
+import Boron15B25 from "./components/Products/Boron-Steel/Grades/15B25/15B25.jsx";
+import Boron10B35 from "./components/Products/Boron-Steel/Grades/10B35/10B35.jsx";
+
 const App = () => {
   useEffect(() => {
     AOS.init({
@@ -48,8 +54,13 @@ const App = () => {
           <Route path="/products/hot-work" element={<HotWork />}>
             <Route path="DB6" element={<DB6 />} />
             <Route path="H13" element={<H13 />} />
-            <Route path="H11" element={<H11 />} />
-            <Route path="H21" element={<H21 />} />
+            {/* <Route path="H11" element={<H11 />} />
+            <Route path="H21" element={<H21 />} /> */}
+          </Route>
+            <Route path="/products/boron-steel" element={<Boron />}>
+            <Route path="10B21" element={<Boron10B21 />} />
+            {/* <Route path="15B25" element={<Boron15B25 />} />
+            <Route path="10B35" element={<Boron10B35 />} /> */}
           </Route>
           <Route path="/quality" element={<Quality />} />
           <Route path="/infrastructure" element={<Infrastructure />} />

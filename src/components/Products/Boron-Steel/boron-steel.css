@@ -1,0 +1,185 @@
+/* Hot work detail section */
+.boron-container {
+  background: #fff;
+  padding: 2rem;
+  color: #2c2c2c;
+}
+
+.boron-hero {
+  text-align: justify;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #e3dcff;
+}
+
+.boron-hero h1 {
+  text-align: center;
+  color: #393185;
+  font-size: 2.2rem;
+}
+
+.boron-hero p {
+  font-size: 18px;
+  color: #666;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.boron-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+  position: relative;
+  transition: all 0.6s ease;
+}
+
+/* Grades section */
+.sidebar-wrapper {
+  flex-shrink: 0;
+  min-width: 50%;
+  display: flex;
+  justify-content: center;
+  transition: transform 1s ease-in-out, min-width 1s ease-in-out;
+  transform: translateX(50%);
+}
+
+.boron-main.active .sidebar-wrapper {
+  min-width: 22%;
+  transform: translateX(0);
+}
+
+.boron-sidebar {
+  width: 100%;
+  background: #f5f5fc;
+  border: 1px solid #e3dcff;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  opacity: 1;
+  transform: scale(1);
+  transition: all 1s ease;
+}
+
+.boron-main.active .boron-sidebar {
+  text-align: left;
+}
+
+.boron-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.boron-sidebar li a {
+  display: block;
+  color: #393185;
+  padding: 0.5rem;
+  margin-bottom: 0.3rem;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.boron-sidebar li a:hover {
+  background: #e3dcff;
+  font-weight: 500;
+  transform: translateX(4px);
+}
+
+.boron-details {
+  flex: 1;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease-in-out;
+  max-width: 100%;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(57, 49, 133, 0.07);
+}
+
+.boron-main.active .boron-details {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.active-grade {
+  background: #e3dcff;
+  font-weight: 500;
+  transform: translateX(4px);
+}
+
+@media (min-width: 768px) {
+  .boron-main.active .sidebar-wrapper {
+    display: flex;
+    align-items: start;
+    height: 75vh;
+    position: sticky;
+    top: 0;
+  }
+
+  .boron-sidebar {
+    margin: auto 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .boron-container {
+    margin-top: 0rem;
+  }
+  .why-ventura h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.8rem !important;
+  }
+  .sidebar-wrapper {
+    min-width: 100%;
+    transform: translateX(0) !important;
+    margin-bottom: 1.5rem;
+  }
+
+  .boron-main.active .sidebar-wrapper {
+    min-width: 100%;
+  }
+
+  .boron-sidebar {
+    text-align: center !important;
+    padding: 1rem;
+  }
+
+  .boron-sidebar h3 {
+    margin-bottom: 1rem;
+  }
+
+  .boron-sidebar li a {
+    padding: 0.7rem;
+    font-size: 1rem;
+  }
+
+  .boron-details {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .boron-hero h1 {
+    margin-top: 0.3rem;
+    font-size: 1.8rem;
+  }
+
+  .boron-hero p {
+    font-size: 16px;
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .boron-hero {
+    padding: 10px;
+  }
+  .boron-sidebar {
+    margin: 0px 20px;
+  }
+  .boron-container {
+    padding: 0.5rem;
+}
+}

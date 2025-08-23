@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import './H11.css'
 
 export default function H11() {
   return (
@@ -71,12 +72,12 @@ export default function H11() {
       </section>
 
       {/* Chemical Composition */}
-      <section className="composition">
+      <section className="h11-composition">
         <h3 className="mb-4 text-center">
           Chemical Composition (Typical Analysis in %)
         </h3>
         <div className="table-data d-flex justify-content-center gap-5">
-          <div className="chemical-composition">
+          <div className="h11-chemical-composition">
             <table>
               <thead>
                 <tr>
@@ -121,7 +122,7 @@ export default function H11() {
             </table>
           </div>
 
-          <div className="name-table">
+          <div className="h11-name-table">
             <table>
               <thead>
                 <tr>

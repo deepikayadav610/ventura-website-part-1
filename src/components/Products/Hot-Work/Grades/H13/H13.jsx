@@ -86,12 +86,12 @@ export default function H13() {
       </section>
 
       {/* Chemical Composition */}
-      <section className="composition">
+      <section className="h13-composition">
         <h3 className="mb-4 text-center">
           Chemical Composition (Typical Analysis in %)
         </h3>
         <div className="table-data d-flex justify-content-center gap-5">
-          <div className="chemical-composition">
+          <div className="h13-chemical-composition">
             <table>
               <thead>
                 <tr>
@@ -136,7 +136,7 @@ export default function H13() {
             </table>
           </div>
 
-          <div className="name-table">
+          <div className="h13-name-table">
             <table>
               <thead>
                 <tr>

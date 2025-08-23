@@ -60,12 +60,12 @@ export default function DB6() {
       </section>
 
       {/* Chemical Composition */}
-      <section className="composition">
+      <section className="db6-composition">
         <h3 className="mb-4 text-center">
           Chemical Composition (Typical Analysis in %)
         </h3>
         <div className="table-data d-flex justify-content-center gap-5">
-          <div className="chemical-composition composition-table">
+          <div className="db6-chemical-composition db6-composition-table">
             <table>
               <thead>
                 <tr>
@@ -106,7 +106,7 @@ export default function DB6() {
             </table>
           </div>
 
-          <div className="name-table">
+          <div className="db6-name-table">
             <table>
               <thead>
                 <tr>

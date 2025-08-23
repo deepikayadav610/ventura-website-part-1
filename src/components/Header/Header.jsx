@@ -203,7 +203,7 @@ export default function Header() {
               }`}
             >
               <div
-                className="d-flex flex-wrap justify-content-around"
+                className="d-flex flex-wrap justify-content-around "
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               >
@@ -428,23 +428,40 @@ export default function Header() {
                   >
                     EN 1A / PB / 230M07 PB
                   </button>
-                  {/* Boron Steel */}
-                  <div className="mega-column">
-                    <button
-                      onClick={() => handleNavClick("/products/boron-steel")}
-                      className="dropdown-item text-heading"
-                    >
-                      Boron Steel
-                    </button>
-                    <button
-                      onClick={() =>
-                        handleNavClick("/products/boron-steel/10B21")
-                      }
-                      className="dropdown-item "
-                    >
-                      10B21/ 15B25 / 10B35
-                    </button>
-                  </div>
+                </div>
+
+                {/* Boron Steel */}
+                <div className="mega-column px-3">
+                  <button
+                    onClick={() => handleNavClick("/products/boron-steel")}
+                    className="dropdown-item text-heading"
+                  >
+                    Boron Steel
+                  </button>
+                  <button
+                    onClick={() =>
+                      handleNavClick("/products/boron-steel/10B21")
+                    }
+                    className="dropdown-item "
+                  >
+                    10B21
+                  </button>
+                  <button
+                    onClick={() =>
+                      handleNavClick("/products/boron-steel/15B25")
+                    }
+                    className="dropdown-item "
+                  >
+                 15B25
+                  </button>
+                  <button
+                    onClick={() =>
+                      handleNavClick("/products/boron-steel/10B35")
+                    }
+                    className="dropdown-item "
+                  >
+                 10B35
+                  </button>
                 </div>
               </div>
             </div>

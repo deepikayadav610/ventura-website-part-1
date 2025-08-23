@@ -9,39 +9,45 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 const products = [
   {
     title: "Hot Work Steel",
-    desc: "Ideal for high-temperature applications like die casting and forging.",
+    desc: "Heat-resistant alloy with high strength and toughness for hot metal forming applications.",
     link: "/products/hot-work",
     img: "/image/Hot Work Tool Steels/Hot Work Tool Steel H13 Round Bars.png",
   },
   {
     title: "Cold Work Steel",
-    desc: "Used for cutting, pressing and punching at room temperature.",
+    desc: "High-carbon, high-chromium tool steels used in industrial tooling, cutting, and cold stamping.",
     link: "/products/cold-work",
     img: "/image/Cold Work Tool Steels/Cold Work - D3.png",
   },
   {
     title: "Plastic Mould Steel",
-    desc: "Known for elasticity and high yield strength for springs and blades.",
+    desc: "Tool steel with hardness, wear resistance, and thermal stability for durable plastic molding applications.",
     link: "/products/spring",
     img: "/image/Plastic Mould Steels/P 20 Flat bars.png",
   },
   {
-    title: "Spring Steel",
-    desc: "Known for elasticity and high yield strength for springs and blades.",
+    title: "Spring Steel",                           
+    desc: "High-carbon alloy with excellent strength, toughness, and elasticity, ideal for springs and dynamic applications.",
     link: "/products/spring",
     img: "/image/Spring Steels/EN 31 Rods.png",
   },
   {
     title: "Alloy Steel",
-    desc: "Known for elasticity and high yield strength for springs and blades.",
+    desc: "Strong, corrosion-resistant bars with excellent toughness and wear resistance, widely used in automotive parts and fasteners.",
     link: "/products/spring",
     img: "/image/Alloy Steels/42CrMo4 Round Bars.png",
   },
   {
     title: "Carbon Steel",
-    desc: "Known for elasticity and high yield strength for springs and blades.",
+    desc: "A strong iron-carbon alloy known for its excellent mechanical properties, strength, and hardness.",
     link: "/products/spring",
     img: "/image/Carbon Steels/C45 Carbon Steel Round Bars.png",
+  },
+  {
+    title: "Boron Steel",
+    desc: "High-strength alloy with enhanced hardenability, widely used in automotive, agricultural, and construction applications",
+    link: "/products/boron-steel",
+    img: "/image/Boron Steels/10B35 Boron Steel Round Bars.png",
   },
 ];
 
