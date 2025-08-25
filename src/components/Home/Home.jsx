@@ -5,11 +5,11 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
+import IndustriesSection from "../Industries/Industries";
 
 // Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import IndustriesSection from "../Industries/Industries";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -68,31 +68,31 @@ export default function Home() {
       title: "Spring Steel",
       desc: "Flexible & strong for industrial use.",
       img: "/image/Spring Steels/EN 31 Rods.png",
-      link: "/products/spring",
+      link: "/products/spring-steel",
     },
     {
       title: "Alloy Steel",
       desc: "Enhanced strength and corrosion resistance.",
       img: "/image/Alloy Steels/EN 31 Round Bars.png",
-      link: "/products/alloy",
+      link: "/products/alloy-steel",
     },
     {
       title: "Plastic Mould Steel",
       desc: "Best suited for mould manufacturing.",
       img: "/image/Plastic Mould Steels/Plastic Mould 2.png",
-      link: "/products/plastic",
+      link: "/products/plastic-mould",
     },
     {
       title: "Carbon Steel",
       desc: "Durable for metal stamping dies.",
       img: "/image/Carbon Steels/C45 Carbon Steel Round Bars.png",
-      link: "/products/die",
+      link: "/products/carbon-steel",
     },
     {
       title: "Boron Steel",
       desc: "Hard steel for cutting & shaping tools.",
       img: "/image/product.jpeg",
-      link: "/products/tool",
+      link: "/products/boron-steel",
     },
   ];
 
@@ -194,6 +194,9 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Industries section */}
+      <IndustriesSection />
+
       {/* Quality & Infrastructure */}
       <div className="container-fluid quality-infra ">
         <h2 className="text-center mt-5 pt-5 text-white" data-aos="fade-right">
@@ -252,9 +255,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* Industries section */}
-      <IndustriesSection />
 
       {/* Products section */}
       <div className="product-container py-5" ref={productsRef}>
