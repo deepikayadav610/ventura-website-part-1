@@ -55,7 +55,7 @@ const App = () => {
             <Route path="DB6" element={<DB6 />} />
             <Route path="H13" element={<H13 />} />
             <Route path="H11" element={<H11 />} />
-            {/* <Route path="H21" element={<H21 />} /> */}
+            <Route path="H21" element={<H21 />} />
           </Route>
           <Route path="/products/boron-steel" element={<Boron />}>
             <Route path="10B21" element={<Boron10B21 />} />
