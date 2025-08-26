@@ -59,8 +59,8 @@ const App = () => {
           </Route>
           <Route path="/products/boron-steel" element={<Boron />}>
             <Route path="10B21" element={<Boron10B21 />} />
-            {/* <Route path="15B25" element={<Boron15B25 />} />
-            <Route path="10B35" element={<Boron10B35 />} /> */}
+            <Route path="15B25" element={<Boron15B25 />} />
+            {/* <Route path="10B35" element={<Boron10B35 />} /> */}
           </Route>
           <Route path="/quality" element={<Quality />} />
           <Route path="/infrastructure" element={<Infrastructure />} />

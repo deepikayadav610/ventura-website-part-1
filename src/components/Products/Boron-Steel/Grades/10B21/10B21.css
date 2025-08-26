@@ -29,14 +29,14 @@ section {
     transform: translateY(0);
   }
 }
-.grade-details hr{
+.grade-details hr {
   color: #c0b4f3;
   border: 1px solid #c0b4f3;
 }
 /* grades details section ends */
 
 /* overview-content */
-.overview-content{
+.overview-content {
   text-align: justify;
 }
 
@@ -47,6 +47,8 @@ section {
 }
 .composition-table th,
 .composition-table td {
+  border: 1px solid #e3dcff;
+  text-align: center;
   padding: 0.78rem !important ;
 }
 .chemical-composition {
@@ -115,7 +117,7 @@ section {
 .applications {
   margin-top: 2rem;
   padding: 1.5rem;
-  background-color: #f5f5fc; 
+  background-color: #f5f5fc;
   border-left: 4px solid #393185;
   border-radius: 8px;
 }
@@ -132,7 +134,6 @@ section {
   line-height: 1.6;
   color: #333;
 }
-
 
 /* media queries */
 @media (max-width: 768px) {
@@ -175,7 +176,7 @@ section {
 }
 
 @media (max-width: 480px) {
- .grade-details h2 {
+  .grade-details h2 {
     font-size: 1.3rem;
   }
   .subtitle {
@@ -197,5 +198,4 @@ section {
   .grade-details {
     padding: 0rem !important;
   }
-
 }
