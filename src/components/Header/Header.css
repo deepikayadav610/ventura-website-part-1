@@ -25,8 +25,8 @@
 }
 
 .bg-social {
-  background-color: #393185;
-  color: #fff;
+  background-color: #fff;
+  color: #393185;
   position: relative;
   z-index: 998;
   transition: transform 0.3s ease, opacity 0.3s ease;
@@ -38,7 +38,10 @@
   pointer-events: none;
 }
 .bg-social i {
-  color: #fff;
+  color: #393185;
+}
+.bg-social a{
+  color: #393185;
 }
 .bg-navbar {
   width: 100%;
@@ -128,7 +131,7 @@
 @media only screen and (max-width: 480px) {
   .contact-info a,
   .contact-info span {
-    font-size: 14px;
+    font-size: 13px;
   }
   .bg-social .gap-3 {
     gap: 0.5rem !important;

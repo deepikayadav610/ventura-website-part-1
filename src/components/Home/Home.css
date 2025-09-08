@@ -292,7 +292,7 @@ body {
 }
 
 .what-we-do-section {
-  background: #f8f9fb; 
+  background: #f8f9fb;
 }
 
 .what-section-title {
@@ -307,7 +307,7 @@ body {
   display: block;
   width: 60px;
   height: 3px;
-  background: #393185; 
+  background: #393185;
   margin-top: 0.5rem;
   border-radius: 2px;
 }
@@ -384,6 +384,9 @@ body {
   .swiper-button-next {
     right: 12% !important;
   }
+  .company-highlights {
+    padding-bottom: 0rem !important;
+  }
   .welcome-content .fs-1 {
     font-size: calc(1.187rem + 1.5vw) !important;
   }
@@ -454,7 +457,6 @@ body {
   .supplier-logo {
     width: 120px;
   }
-   
 }
 
 @media (max-width: 768px) {

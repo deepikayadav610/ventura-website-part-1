@@ -62,7 +62,7 @@ export default function Header() {
           <div className="d-flex justify-content-center gap-3 small contact-info">
             <a
               href="mailto:sales@venturasteels.com"
-              className="text-decoration-none text-white"
+              className="text-decoration-none"
             >
               <span>
                 <i className="bi bi-envelope me-1"></i>
@@ -71,7 +71,7 @@ export default function Header() {
             </a>
             <a
               href="mailto:sales@venturasteels.com"
-              className="text-decoration-none text-white"
+              className="text-decoration-none"
             >
               <span>
                 <i className="bi bi-envelope me-1"></i>
@@ -102,9 +102,6 @@ export default function Header() {
             </a>
             <a href="https://linkedin.com" target="_blank" rel="noreferrer">
               <i className="bi bi-linkedin"></i>
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer">
-              <i className="bi bi-twitter"></i>
             </a>
           </div>
         </div>
@@ -185,7 +182,7 @@ export default function Header() {
           >
             About Us
           </button>
-          
+
           <div className="nav-item dropdown position-static">
             <button
               className="nav-link dropdown-toggle text-white"

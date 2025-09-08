@@ -131,7 +131,7 @@ export default function Home() {
       </div>
 
       {/* company highlights cards */}
-      <section className="py-5" ref={highlightsRef}>
+      <section className="py-5 company-highlights" ref={highlightsRef}>
         <div className="container">
           <div className="row text-center g-4">
             {stats.map((stat, index) => (
