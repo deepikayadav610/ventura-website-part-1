@@ -37,11 +37,11 @@ export default function Home() {
     { icon: "bi-calendar-check", number: 2014, label: "Established" },
     {
       icon: "bi-box-seam",
-      number: 10000,
+      number: 25000,
       suffix: "+ Tonnes",
       label: "Stock Capacity",
     },
-    { icon: "bi-award", number: 70, suffix: "+", label: "Grades" },
+    { icon: "bi-award", number: 100, suffix: "+", label: "Grades" },
     { icon: "bi-people-fill", number: 1700, suffix: "+", label: "Customers" },
   ];
 
@@ -122,10 +122,11 @@ export default function Home() {
         </video>
 
         <div className="overlay">
-          <h1>
-            Welcome to Ventura Steels <br />
-            <span ref={typedRef} className=""></span>
-          </h1>
+          <h1>Ventura is a complete steel service center.</h1>
+          <p>
+            {" "}
+            <span ref={typedRef} className="fs-3"></span>
+          </p>
         </div>
       </div>
 
@@ -199,11 +200,11 @@ export default function Home() {
 
       {/* Quality & Infrastructure */}
       <div className="container-fluid quality-infra ">
-        <h2 className="text-center mt-5 pt-5 text-white" data-aos="fade-right">
-          Quality & <span>Infrastructure</span>
+        <h2 className="text-center mt-5 pt-5 " data-aos="fade-right">
+          Quality & Infrastructure
         </h2>
-        <hr className="heading-line" data-aos="fade-right" />
-        <h5 className="text-center mt-2 mb-5" data-aos="fade-right">
+        <hr className="heading-line mt-2 mb-2" data-aos="fade-right" />
+        <h5 className="text-center mt-4 mb-5" data-aos="fade-right">
           At Ventura Alloy, quality is our cornerstone and more than just a
           promise. Only reputable mills provide our steel materials, which are
           fully traceable and certified by third parties (EN, ASTM, DIN
@@ -274,8 +275,9 @@ export default function Home() {
               0: { slidesPerView: 1 },
               576: { slidesPerView: 2 },
               768: { slidesPerView: 2.5 },
-              992: { slidesPerView: 3 },
-              1200: { slidesPerView: 4 },
+              1050: { slidesPerView: 3 },
+              1350: { slidesPerView: 3 },
+              1450: { slidesPerView: 4 },
             }}
             className="product-swiper"
           >
@@ -302,31 +304,52 @@ export default function Home() {
       </div>
 
       {/* What we do section */}
-      <section className="what-we-do py-5">
+      <section className="what-we-do-section py-5">
         <div className="container">
-          <div className="row align-items-center flex-md-row flex-column-reverse">
-            <div
-              className="col-md-6 text-content pe-md-5"
-              data-aos="fade-right"
-            >
-              <h2 className="section-title mb-3">What we do</h2>
-              <p className="section-text fs-5">
-                We offer comprehensive steel supply solutions for vital
-                applications that require compliance, performance, and
-                durability. Ventura Alloy provides a carefully chosen inventory
-                of industrial steels that are suited to your technical and
-                dimensional requirements, ranging from chrome moly tubes and
-                alloy steel bars to case-hardening and heat-resistant grades.
-                Our skilled staff provides materials that function where it
-                counts most, whether you're sourcing for turnkey infrastructure
-                projects or high-stress mechanical components.
-              </p>
+          <div className="row align-items-center">
+            {/* Left Content */}
+            <div className="col-lg-6" data-aos="fade-right">
+              <h2 className="what-section-title text-start mb-4">What We Do</h2>
+              <div className="row g-4">
+                <div className="col-md-6">
+                  <div className="what-card" data-aos="zoom-in-up">
+                    <h5>Comprehensive Supply</h5>
+                    <p>Complete steel solutions for key sectors.</p>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="what-card" data-aos="zoom-in-up">
+                    <h5>Wide Inventory</h5>
+                    <p>Alloy bars, heat-resistant grades & moly tubes.</p>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="what-card" data-aos="zoom-in-up">
+                    <h5>Performance & Compliance</h5>
+                    <p>Materials meeting global industry standards.</p>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="what-card" data-aos="zoom-in-up">
+                    <h5>Tailored Solutions</h5>
+                    <p>Precise dimensional & technical requirements.</p>
+                  </div>
+                </div>
+                <div className="col-md-12 mb-3">
+                  <div className="what-card" data-aos="zoom-in-up">
+                    <h5>Expert Support</h5>
+                    <p>Guidance for high-stress industrial projects.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="col-md-6 text-end" data-aos="fade-left">
+
+            {/* Right Image */}
+            <div className="col-lg-6 text-center mt-3" data-aos="fade-left">
               <img
-                src="/image/Cold Work Tool Steels/Cold Work - D2.png"
-                alt="What we do"
-                className="img-fluid rounded-4 shadow"
+                src="/image/about-ventura.png"
+                alt="What Ventura Do"
+                className="img-fluid rounded shadow-lg what-img"
               />
             </div>
           </div>

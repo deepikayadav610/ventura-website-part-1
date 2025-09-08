@@ -8,9 +8,6 @@ import Home from "./components/Home/Home.jsx";
 import AboutUs from "./components/AboutUs/AboutUs.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import Products from "./components/Products/Products.jsx";
-import HotWork from "./components/Products/Hot-Work/hot-work.jsx";
-import DB6 from "./components/Products/Hot-Work/Grades/DB6/DB6.jsx";
-import H13 from "./components/Products/Hot-Work/Grades/H13/H13.jsx";
 import Quality from "./components/Quality/Quality.jsx";
 import Infrastructure from "./components/Infrastructure/Infrastructure.jsx";
 import Certifications from "./components/Certificates/Certificates.jsx";
@@ -18,13 +15,20 @@ import EnquiryForm from "./components/Enquiry/Enquiry.jsx";
 import Careers from "./components/Careers/Careers.jsx";
 import ContactUs from "./components/ContactUs/ContactUs.jsx";
 import Blogs from "./components/Blogs/Blogs.jsx";
-import H11 from "./components/Products/Hot-Work/Grades/H11/H11.jsx";
-import H21 from "./components/Products/Hot-Work/Grades/H21/H21.jsx";
 import Automotive from "./components/Industries/Automative/Automative.jsx";
 import Aerospace from "./components/Industries/Aerospace/Aerospace.jsx";
 import Tooling from "./components/Industries/Tooling/Tooling.jsx";
 import InfrastructureEnergy from "./components/Industries/Infrastructure/Infrastructure-energy.jsx";
 import Plastics from "./components/Industries/Plastics/Plastics.jsx";
+
+// Hot Work Steel
+import HotWork from "./components/Products/Hot-Work/hot-work.jsx";
+import DB6 from "./components/Products/Hot-Work/Grades/DB6/DB6.jsx";
+import H13 from "./components/Products/Hot-Work/Grades/H13/H13.jsx";
+import H11 from "./components/Products/Hot-Work/Grades/H11/H11.jsx";
+import H21 from "./components/Products/Hot-Work/Grades/H21/H21.jsx";
+import H10 from "./components/Products/Hot-Work/Grades/H10/H10.jsx";
+import H12 from "./components/Products/Hot-Work/Grades/H12/H12.jsx";
 
 // Boron Steels
 import Boron from "./components/Products/Boron-Steel/boron-steel.jsx";
@@ -56,6 +60,8 @@ const App = () => {
             <Route path="H13" element={<H13 />} />
             <Route path="H11" element={<H11 />} />
             <Route path="H21" element={<H21 />} />
+            <Route path="H10" element={<H10 />} />
+            <Route path="H12" element={<H12 />} />
           </Route>
           <Route path="/products/boron-steel" element={<Boron />}>
             <Route path="10B21" element={<Boron10B21 />} />

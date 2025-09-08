@@ -86,19 +86,19 @@ body {
 }
 
 /* quality & infrastructure */
-
 .quality-infra {
-  background: #a5a2c3;
+  background: #a5a2c380;
 }
 
-.quality-infra h2 span {
+.quality-infra h2 {
   color: #393185;
+  font-weight: 600;
 }
 
 .heading-line {
   width: 250px;
-  margin: 20px auto;
-  border: 2px solid #ffffff;
+  margin: 0 auto;
+  border: 2px solid #393185;
   opacity: 0.82;
 }
 
@@ -291,25 +291,59 @@ body {
   height: 300px;
 }
 
-/* what we do  */
-.what-we-do {
-  background-color: #f7f6f9;
+.what-we-do-section {
+  background: #f8f9fb; 
 }
 
-.section-title {
-  font-size: 2rem;
+.what-section-title {
+  font-size: 2.2rem;
   font-weight: 700;
   color: #393185;
+  position: relative;
 }
 
-.section-text {
-  text-align: justify;
-  line-height: 1.8;
-  color: #333;
+.what-section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #393185; 
+  margin-top: 0.5rem;
+  border-radius: 2px;
 }
-.what-we-do img {
-  width: 450px;
-  height: auto;
+
+.what-card {
+  background: #fff;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  border: 1px solid #e4e6eb;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+/* what we do */
+
+.what-card h5 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #393185;
+  margin-bottom: 0.4rem;
+}
+
+.what-card p {
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.what-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.what-img {
+  max-width: 85%;
+  border-radius: 12px;
 }
 
 /* suppliers section */
@@ -367,7 +401,7 @@ body {
     width: 300px;
     height: 300px;
   }
-  .welcome-end{
+  .welcome-end {
     text-align: center !important;
   }
   /* quality infrastructure */
@@ -377,7 +411,7 @@ body {
     border: 1px solid #ffffff;
   }
   .quality-infra h5 {
-    font-size: 16px;
+    font-size: 15px;
     text-align: justify !important;
   }
   .quality-card,
@@ -420,6 +454,7 @@ body {
   .supplier-logo {
     width: 120px;
   }
+   
 }
 
 @media (max-width: 768px) {
@@ -448,5 +483,25 @@ body {
   }
   .product-container {
     width: 87%;
+  }
+  .quality-infra h5 {
+    width: 100%;
+    font-size: 18px;
+    text-align: justify !important;
+  }
+  .welcome-end img {
+    display: flex;
+    margin: 0px auto;
+    border-radius: 10px;
+  }
+  .col-sm-4 {
+    flex: 0 0 auto;
+    width: 25.33333333%;
+  }
+}
+
+@media (max-width: 999px) {
+  .card-overlay .fs-6 {
+    font-size: 0.9rem !important;
   }
 }

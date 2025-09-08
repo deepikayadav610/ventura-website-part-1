@@ -14,7 +14,7 @@ const HotWork = () => {
   return (
     <div className="hotwork-container">
       <div className="hotwork-hero">
-        <h1 className="text-center">Hot Work Tool Steels</h1>
+        <h1 className="text-center mt-4">Hot Work Tool Steels</h1>
         <p>
           These hot die steels are compatible with heat. They are highly known
           for great wear resistance, heat conductivity, hardness and robustness

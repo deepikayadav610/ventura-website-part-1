@@ -483,7 +483,7 @@ export default function H13() {
         <Link to="/enquiry" className="btn btn-primary">
           Request an Enquiry
         </Link>
-        {/* <span>MOQ: 200 kg | Price: ₹135/kg*</span> */}
+        {/* <span>MOQ: 200 kg </span> */}
       </div>
     </div>
   );

@@ -185,54 +185,43 @@ export default function Header() {
           >
             About Us
           </button>
-          <div
-            className="nav-item dropdown position-static"
-            onMouseEnter={handleMouseEnter}
-            style={{ position: "relative" }}
-          >
+          
+          <div className="nav-item dropdown position-static">
             <button
-              onClick={() => handleNavClick("/products")}
               className="nav-link dropdown-toggle text-white"
+              onClick={() => handleNavClick("/products")}
             >
               Products
             </button>
 
-            <div
-              className={`dropdown-menu w-90 shadow-lg rounded-0 mega-dropdown text-white p-3 ${
-                isOpen ? "show d-block" : "d-none"
-              }`}
-            >
-              <div
-                className="d-flex flex-wrap justify-content-around "
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-              >
-                {/* Hot Work Steel */}
-                <div className="mega-column px-3">
-                  <button
-                    onClick={() => handleNavClick("/products/hot-work")}
-                    className="dropdown-item text-heading"
-                  >
-                    Hot Work Steel
-                  </button>
-
+            {/* Products dropdown */}
+            <div className="dropdown-menu shadow-lg rounded-0 mega-dropdown p-2">
+              {/* Hot Work */}
+              <div className="dropdown-submenu">
+                <button
+                  onClick={() => handleNavClick("/products/hot-work")}
+                  className="dropdown-item"
+                >
+                  Hot Work Steel ▸
+                </button>
+                <div className="dropdown-menu sub-dropdown">
                   <button
                     onClick={() => handleNavClick("/products/hot-work/DB6")}
                     className="dropdown-item "
                   >
-                    DB6 / DIN 2714 / AISI L6
+                    DB6 / DIN 1.2714 / AISI L6
                   </button>
                   <button
                     onClick={() => handleNavClick("/products/hot-work/H13")}
                     className="dropdown-item "
                   >
-                    H13 / AISI H 13 / DIN 2344
+                    H13 / AISI H13 / DIN 1.2344
                   </button>
                   <button
                     onClick={() => handleNavClick("/products/hot-work/H11")}
                     className="dropdown-item "
                   >
-                    H11 / AISI H 11 / DIN 2343
+                    H11 / AISI H 11 / DIN 1.2343
                   </button>
                   <button
                     onClick={() => handleNavClick("/products/hot-work/H21")}
@@ -253,88 +242,94 @@ export default function Header() {
                     H12 / AISI H12 / DIN 1.2606
                   </button>
                 </div>
+              </div>
 
-                {/* Cold Work Steel */}
-                <div className="mega-column px-3">
-                  <button
-                    onClick={() => handleNavClick("/products/cold-work")}
-                    className="dropdown-item text-heading"
-                  >
-                    Cold Work Steel
-                  </button>
+              {/* Cold Work */}
+              <div className="dropdown-submenu">
+                <button
+                  onClick={() => handleNavClick("/products/cold-work")}
+                  className="dropdown-item"
+                >
+                  Cold Work Steel ▸
+                </button>
+                <div className="dropdown-menu sub-dropdown">
                   <button
                     onClick={() => handleNavClick("/products/cold-work/D2")}
                     className="dropdown-item "
                   >
-                    D2 / 2379 / HCHCR D2
+                    D2 / 1.2379 / HCHCR D2
                   </button>
                   <button
                     onClick={() => handleNavClick("/products/cold-work/D3")}
                     className="dropdown-item "
                   >
-                    D3 / 2080 / HCHCR D3
+                    D3 / 1.2080 / HCHCR D3
                   </button>
                   <button
                     onClick={() => handleNavClick("/products/cold-work/D5")}
                     className="dropdown-item "
                   >
-                    D5 / Cr12MoV / 2601
+                    D5 / Cr12MoV / 1.2601
                   </button>
                   <button
                     onClick={() => handleNavClick("/products/cold-work/A2")}
                     className="dropdown-item "
                   >
-                    A2 / 2363
+                    A2 / 1.2363
                   </button>
                   <button
-                    onClick={() => handleNavClick("/products/cold-work/01")}
+                    onClick={() => handleNavClick("/products/cold-work/O1")}
                     className="dropdown-item "
                   >
                     O1/ 2510/ OHNS O1
                   </button>
                 </div>
+              </div>
 
-                {/* Plastic Mould Steel */}
-                <div className="mega-column px-3">
-                  <button
-                    onClick={() => handleNavClick("/products/plastic")}
-                    className="dropdown-item text-heading"
-                  >
-                    Plastic Mould Steel
-                  </button>
+              {/* Plastic Mould Steel */}
+              <div className="dropdown-submenu">
+                <button
+                  onClick={() => handleNavClick("/products/plastic")}
+                  className="dropdown-item"
+                >
+                  Plastic Mould Steel ▸
+                </button>
+                <div className="dropdown-menu sub-dropdown">
                   <button
                     onClick={() => handleNavClick("/products/plastic/P20N1")}
                     className="dropdown-item "
                   >
-                    P20+N1 / 2738
+                    P20+Ni / 1.2738
                   </button>
                   <button
                     onClick={() => handleNavClick("/products/plastic/P20")}
                     className="dropdown-item "
                   >
-                    P20 / 2311
+                    P20 / 1.2311
                   </button>
                   <button
                     onClick={() => handleNavClick("/products/plastic/2316")}
                     className="dropdown-item "
                   >
-                    2316
+                    1.2316
                   </button>
                 </div>
+              </div>
 
-                {/* Spring Steel */}
-                <div className="mega-column px-3">
-                  <button
-                    onClick={() => handleNavClick("/products/spring")}
-                    className="dropdown-item text-heading"
-                  >
-                    Spring Steel
-                  </button>
+              {/* Spring Steel */}
+              <div className="dropdown-submenu">
+                <button
+                  onClick={() => handleNavClick("/products/spring")}
+                  className="dropdown-item"
+                >
+                  Spring Steel ▸
+                </button>
+                <div className="dropdown-menu sub-dropdown">
                   <button
                     onClick={() => handleNavClick("/products/spring/EN47")}
                     className="dropdown-item "
                   >
-                    EN 47 / 50CrV4 / 51CrV4 / AISI 6150 / DIN 8159
+                    EN 47 / 50CrV4 / 51CrV4 / AISI 6150 / DIN 8159 / SUP 10
                   </button>
                   <button
                     onClick={() => handleNavClick("/products/spring/SUP9")}
@@ -346,7 +341,7 @@ export default function Header() {
                     onClick={() => handleNavClick("/products/spring/SAE9254")}
                     className="dropdown-item "
                   >
-                    SAE 9254
+                    SAE 9254 / SUP 11A
                   </button>
                   <button
                     onClick={() => handleNavClick("/products/spring/EN31")}
@@ -358,7 +353,7 @@ export default function Header() {
                     onClick={() => handleNavClick("/products/spring/EN45")}
                     className="dropdown-item "
                   >
-                    EN45 / SAE 9260
+                    EN45 / SAE 9260 / 60Si7
                   </button>
                   <button
                     onClick={() => handleNavClick("/products/spring/SAE5160")}
@@ -366,55 +361,113 @@ export default function Header() {
                   >
                     SAE 5160
                   </button>
-                </div>
-
-                {/* Alloy Steel */}
-                <div className="mega-column px-3">
                   <button
-                    onClick={() => handleNavClick("/products/alloy-steel")}
-                    className="dropdown-item text-heading"
+                    onClick={() => handleNavClick("/products/spring/SAE5160")}
+                    className="dropdown-item "
                   >
-                    Alloy Steel
+                    52CrMoV4 / 50Cr4MoV2
                   </button>
+                  <button
+                    onClick={() => handleNavClick("/products/spring/SAE5160")}
+                    className="dropdown-item "
+                  >
+                    52CrV4 / 51CrV4 / AISI 4150
+                  </button>
+                  <button
+                    onClick={() => handleNavClick("/products/spring/SAE5160")}
+                    className="dropdown-item "
+                  >
+                    55Si7 / 56Si7 / SAE 9255
+                  </button>
+                </div>
+              </div>
+
+              {/* Alloy Steel */}
+              <div className="dropdown-submenu">
+                <button
+                  onClick={() => handleNavClick("/products/alloy-steel")}
+                  className="dropdown-item"
+                >
+                  Alloy Steel ▸
+                </button>
+                <div className="dropdown-menu sub-dropdown">
                   <button
                     onClick={() => handleNavClick("/products/alloy/EN24")}
                     className="dropdown-item "
                   >
-                    EN 24 / SAE 4340 / 40NiCrMo84 / EN 41B / EN14 / BM
+                    20MnCr5 / 16MnCr5
                   </button>
                   <button
                     onClick={() => handleNavClick("/products/alloy/EN19")}
                     className="dropdown-item "
                   >
-                    EN 19 / SAE 4140 / DIN 42CrMo4
+                    SAE 4140 / EN 19 / 42CrMo4 / EN18A / EN18A-D
                   </button>
                   <button
                     onClick={() => handleNavClick("/products/alloy/EN18")}
                     className="dropdown-item "
                   >
-                    EN18 / 41Cr4
+                    SAE 1020
+                  </button>
+                  <button
+                    onClick={() => handleNavClick("/products/alloy/EN18")}
+                    className="dropdown-item "
+                  >
+                    41Cr4 / EN18 / 40Cr4B
+                  </button>
+                  <button
+                    onClick={() => handleNavClick("/products/alloy/EN18")}
+                    className="dropdown-item "
+                  >
+                    EN 41B / 41CrV4 / AISI 4340 / 40NiCrMo84
+                  </button>
+                  <button
+                    onClick={() => handleNavClick("/products/alloy/EN18")}
+                    className="dropdown-item "
+                  >
+                    EN 24 / 18CrNiMo6
+                  </button>
+                  <button
+                    onClick={() => handleNavClick("/products/alloy/EN18")}
+                    className="dropdown-item "
+                  >
+                    SAE4130
+                  </button>
+                  <button
+                    onClick={() => handleNavClick("/products/alloy/EN18")}
+                    className="dropdown-item "
+                  >
+                    EN36C
+                  </button>
+                  <button
+                    onClick={() => handleNavClick("/products/alloy/EN18")}
+                    className="dropdown-item "
+                  >
+                    SAE 8620 / EN353 / SAE 9310
                   </button>
                 </div>
+              </div>
 
-                {/* Carbon Steel */}
-                <div className="mega-column px-3">
-                  <button
-                    onClick={() => handleNavClick("/products/carbon-steel")}
-                    className="dropdown-item text-heading"
-                  >
-                    Carbon Steel
-                  </button>
+              {/* Carbon Steel */}
+              <div className="dropdown-submenu">
+                <button
+                  onClick={() => handleNavClick("/products/carbon-steel")}
+                  className="dropdown-item"
+                >
+                  Carbon Steel ▸
+                </button>
+                <div className="dropdown-menu sub-dropdown">
                   <button
                     onClick={() => handleNavClick("/products/carbon/C45")}
                     className="dropdown-item "
                   >
-                    C45 / SAE 1018 / EN9 / EN8D
+                    C45 / EN9 /EN8A / EN8D / EN8M / EN8DM / CK45 / AISI 1045
                   </button>
                   <button
                     onClick={() => handleNavClick("/products/carbon/SAE1141")}
                     className="dropdown-item "
                   >
-                    SAE 1141
+                    SAE 1018 / ASTM A36 / ASTM A29 / SAE 1137 / SAE 1138
                   </button>
                   <button
                     onClick={() => handleNavClick("/products/carbon/ST52.3")}
@@ -426,18 +479,56 @@ export default function Header() {
                     onClick={() => handleNavClick("/products/carbon/EN1A")}
                     className="dropdown-item "
                   >
-                    EN 1A / PB / 230M07 PB
+                    EN 1A / EN 1A_PB / EN 1A_L / 230M07 PB
+                  </button>
+                  <button
+                    onClick={() => handleNavClick("/products/carbon/EN1A")}
+                    className="dropdown-item "
+                  >
+                    35C8 / C35 / EN8 / SAE 1035 / 45C8
+                  </button>
+                  <button
+                    onClick={() => handleNavClick("/products/carbon/EN1A")}
+                    className="dropdown-item "
+                  >
+                    SAE 1541 / EN 15
+                  </button>
+                  <button
+                    onClick={() => handleNavClick("/products/carbon/EN1A")}
+                    className="dropdown-item "
+                  >
+                    27C15 / SAE 1527
+                  </button>
+                  <button
+                    onClick={() => handleNavClick("/products/carbon/EN1A")}
+                    className="dropdown-item "
+                  >
+                    SAE 1117 /ASTM A108
+                  </button>
+                  <button
+                    onClick={() => handleNavClick("/products/carbon/EN1A")}
+                    className="dropdown-item "
+                  >
+                    EN43BCr / SAE 1050 / EN43A
+                  </button>
+                  <button
+                    onClick={() => handleNavClick("/products/carbon/EN1A")}
+                    className="dropdown-item "
+                  >
+                    SAE 1141
                   </button>
                 </div>
+              </div>
 
-                {/* Boron Steel */}
-                <div className="mega-column px-3">
-                  <button
-                    onClick={() => handleNavClick("/products/boron-steel")}
-                    className="dropdown-item text-heading"
-                  >
-                    Boron Steel
-                  </button>
+              {/* Boron Steel */}
+              <div className="dropdown-submenu">
+                <button
+                  onClick={() => handleNavClick("/products/boron-steel")}
+                  className="dropdown-item"
+                >
+                  Boron Steel ▸
+                </button>
+                <div className="dropdown-menu sub-dropdown">
                   <button
                     onClick={() =>
                       handleNavClick("/products/boron-steel/10B21")
@@ -452,7 +543,7 @@ export default function Header() {
                     }
                     className="dropdown-item "
                   >
-                 15B25
+                    15B25
                   </button>
                   <button
                     onClick={() =>
@@ -460,7 +551,7 @@ export default function Header() {
                     }
                     className="dropdown-item "
                   >
-                 10B35
+                    10B35
                   </button>
                 </div>
               </div>

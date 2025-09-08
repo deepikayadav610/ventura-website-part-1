@@ -1,11 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./H21.css"
 
-export default function H21() {
+export default function H12() {
   return (
     <div className="grade-details">
-      <h2 className="text-center"> H21 / AISI H21 / DIN 1.2581 </h2>
+      <h2 className="text-center">H12 / AISI H12 / DIN 1.2606</h2>
       <p className="subtitle text-center">
         Premium Hot Work Tool Steel with high toughness & wear resistance.
       </p>
@@ -18,12 +17,12 @@ export default function H21() {
                 <td>
                   <strong>STANDARDS</strong>
                 </td>
-                <td>X30WCrV-3</td>
-                <td>H21</td>
-                <td>DIN 2581</td>
-                <td>AISI H21</td>
+                <td>X37CrMoW5-1 </td>
+                <td>H12</td>
+                <td>DIN 2606</td>
+                <td>AISI H12</td>
                 <td>AFNOR 32CDV12-28</td>
-                <td>JIS SKD5</td>
+                <td>JIS SKD62</td>
               </tr>
             </tbody>
           </table>
@@ -31,22 +30,25 @@ export default function H21() {
       </div>
 
       {/* Overview */}
-      <section className="overview d-flex justify-content-center align-items-center gap-5">
+      <section className="overview d-flex justify-content-center align-items-center gap-5 mb-4">
         <div className="overview-content">
           <p>
-            H21 Steel is a hot work tool steel for oil or air hardening to
-            develop high hot quality, support of hardness, and warmth checking
-            resistance.
-          </p>
-          <p>
-            This is mostly utilized as hot work devices, instruments for
-            manufacture of hollows, screws, rivets, nuts and bolts. Die casting
-            tools, forming dies, die inserts, hot shear blades.
+            H12 Hot Work Die Steel could be a five-hitter Cr, general hot work
+            steel that is characterized by wonderful effect strength. It
+            contains less vanadium than the broadly utilized H13 hot work tool
+            steel, and furthermore the tungsten content gives higher temper
+            resistance. It has smart resistance to thermal fatigue cracking
+            (heat checking) and excellent resistance to gross cracking and
+            thermal shock once water cooled in commission. TLS H12 hot work tool
+            steel is normally prescribed for warm tooling applications wherever
+            most resistance from cracking is required. Such applications grasp
+            die casting, hot punches, hot shear cutting edges, shaping dies,
+            extrusion tooling and hot gripper dies.
           </p>
         </div>
         <div className="db6-img">
           <img
-            src="/image/Hot Work Tool Steels/Hot Work Tool Steel H13 Round Bars.png"
+            src="/image/Hot Work Tool Steels/Hot Work Steel DB 6 Block.png"
             alt="DB6 Image"
             width={300}
           />
@@ -54,12 +56,12 @@ export default function H21() {
       </section>
 
       {/* Chemical Composition */}
-      <section className="h21-composition">
+      <section className="db6-composition">
         <h3 className="mb-4 text-center">
           Chemical Composition (Typical Analysis in %)
         </h3>
         <div className="table-data d-flex justify-content-center gap-5">
-          <div className="h21-chemical-composition">
+          <div className="db6-chemical-composition db6-composition-table">
             <table>
               <thead>
                 <tr>
@@ -70,41 +72,37 @@ export default function H21() {
               <tbody>
                 <tr>
                   <td>C</td>
-                  <td>0.26-0.36</td>
+                  <td>0.30-0.40</td>
                 </tr>
                 <tr>
                   <td>Si</td>
-                  <td>0.15-0.25</td>
-                </tr>
-                <tr>
-                  <td>Mn</td>
-                  <td>0.20-0.40</td>
+                  <td>0.80-1.25 </td>
                 </tr>
                 <tr>
                   <td>P</td>
-                  <td> 0.003 max</td>
-                </tr>
-                <tr>
-                  <td>S</td>
-                  <td>0.030max</td>
+                  <td>0.003 max</td>
                 </tr>
                 <tr>
                   <td>Cr</td>
-                  <td>3.00-3.75</td>
+                  <td>4.75-5.50</td>
                 </tr>
                 <tr>
                   <td>W</td>
-                  <td>8.50-10.00</td>
+                  <td>1.00-1.70</td>
                 </tr>
                 <tr>
-                  <td>V</td>
-                  <td>0.30-0.60</td>
+                  <td>Mo</td>
+                  <td>1.25-1.75</td>
+                </tr>
+                <tr>
+                  <td>Mo</td>
+                  <td>0.20-0.50</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <div className="h21-name-table">
+          <div className="db6-name-table">
             <table>
               <thead>
                 <tr>
@@ -117,37 +115,22 @@ export default function H21() {
                 <tr>
                   <td>USA</td>
                   <td>AISI / SAE</td>
-                  <td>H21 / T20821</td>
-                </tr>
-                <tr>
-                  <td>France</td>
-                  <td>AFNOR</td>
-                  <td>X30WCrV9</td>
+                  <td>H12 / T20812</td>
                 </tr>
                 <tr>
                   <td>Germany</td>
                   <td>DIN, WNr</td>
-                  <td>X30WCrV93 / 1.2581</td>
+                  <td>1.2605 / X35CrWMoV5</td>
                 </tr>
                 <tr>
-                  <td>China</td>
-                  <td>GB</td>
-                  <td>3Cr2W8V </td>
+                  <td>Japan</td>
+                  <td>JIS G4404</td>
+                  <td>SKD62 </td>
                 </tr>
                 <tr>
-                  <td>Japan </td>
-                  <td>JIS</td>
-                  <td>SKD5</td>
-                </tr>
-                <tr>
-                  <td>England</td>
-                  <td>BS</td>
-                  <td>BH21</td>
-                </tr>
-                <tr>
-                  <td>Sweden</td>
-                  <td>SS</td>
-                  <td>2730</td>
+                  <td>British </td>
+                  <td>BS 4659</td>
+                  <td>BH12</td>
                 </tr>
               </tbody>
             </table>
@@ -158,21 +141,12 @@ export default function H21() {
       {/* Steel properties */}
       <section className="steel-properties">
         <h2>Steel Properties</h2>
-        <p>
-          Hot work steel has great toughness and contains Tungsten, Chromium,
-          Carbon, Vanadium and generally its working hardness is 40.0 to 55.0
-          HRC size and is accessible in round, level and square shapes.
-        </p>
-      </section>
-
-      {/* applications */}
-      <section className="applications">
-        <h2>Applications</h2>
-        <p>
-          The H21 tungsten hot-work tool steels are primarily utilized for
-          hot-working dies and tooling. For example extrusion, die casting &
-          hot-forming of parts.
-        </p>
+        <ul>
+          <li>Magnificent Resistance to Wear</li>
+          <li>High Strength at Elevated Temperature</li>
+          <li>Homogenizing with High Toughness</li>
+          <li>Additional Fine Structure without Grain-Boundary Carbide</li>
+        </ul>
       </section>
 
       {/* Thermal properties */}
@@ -193,59 +167,15 @@ export default function H21() {
                 <tbody>
                   <tr>
                     <td>20-100</td>
-                    <td>11.2</td>
+                    <td>11.7</td>
                   </tr>
                   <tr>
-                    <td>20-200</td>
-                    <td>11.9</td>
-                  </tr>
-                  <tr>
-                    <td>20-300</td>
-                    <td>12.2</td>
-                  </tr>
-                  <tr>
-                    <td>20-400</td>
-                    <td>12.5</td>
+                    <td>20-250</td>
+                    <td>12.4</td>
                   </tr>
                   <tr>
                     <td>20-500</td>
-                    <td>12.8</td>
-                  </tr>
-                  <tr>
-                    <td>20-600</td>
-                    <td>13.0</td>
-                  </tr>
-                  <tr>
-                    <td>20-700</td>
-                    <td>13.2</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <div className="col-md-6">
-            <div className="property-card mb-3">
-              <h4>Thermal Conductivity</h4>
-              <table className="table table-bordered ">
-                <thead>
-                  <tr>
-                    <th>Temperature (°C)</th>
-                    <th>W / (m*K)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>100</td>
-                    <td>27.0</td>
-                  </tr>
-                  <tr>
-                    <td>400</td>
-                    <td>29.8</td>
-                  </tr>
-                  <tr>
-                    <td>675</td>
-                    <td>29.1</td>
+                    <td>12.9</td>
                   </tr>
                 </tbody>
               </table>
@@ -267,11 +197,11 @@ export default function H21() {
                 <tbody>
                   <tr>
                     <th>Soft Annealing °C</th>
-                    <td>780-810</td>
+                    <td>820</td>
                   </tr>
                   <tr>
                     <th>Cooling</th>
-                    <td>Slowly</td>
+                    <td>Furnace</td>
                   </tr>
                   <tr>
                     <th>Hardness HB</th>
@@ -279,15 +209,15 @@ export default function H21() {
                   </tr>
                   <tr>
                     <th>Hardening °C</th>
-                    <td>1000-1130</td>
+                    <td>1030-1130</td>
                   </tr>
                   <tr>
                     <th>Quenching</th>
-                    <td>Oil or Hot Bath 600-650°C</td>
+                    <td>Oil or Hot Bath 500-550°C</td>
                   </tr>
                   <tr>
                     <th>Hardness after Quenching HRC</th>
-                    <td>53</td>
+                    <td>57</td>
                   </tr>
                 </tbody>
               </table>
@@ -308,39 +238,39 @@ export default function H21() {
                 <tbody>
                   <tr>
                     <td>100</td>
-                    <td>49</td>
+                    <td>55</td>
                   </tr>
                   <tr>
                     <td>210</td>
-                    <td>49</td>
+                    <td>54</td>
                   </tr>
                   <tr>
                     <td>300</td>
-                    <td>49</td>
-                  </tr>
-                  <tr>
-                    <td>400</td>
-                    <td>49</td>
-                  </tr>
-                  <tr>
-                    <td>500</td>
-                    <td>51</td>
-                  </tr>
-                  <tr>
-                    <td>550</td>
-                    <td>51</td>
-                  </tr>
-                  <tr>
-                    <td>600</td>
                     <td>50</td>
                   </tr>
                   <tr>
-                    <td>650</td>
-                    <td>46</td>
+                    <td>400</td>
+                    <td>54.8</td>
+                  </tr>
+                  <tr>
+                    <td>500</td>
+                    <td>53</td>
+                  </tr>
+                  <tr>
+                    <td>600</td>
+                    <td>51</td>
                   </tr>
                   <tr>
                     <td>700</td>
-                    <td>36</td>
+                    <td>48</td>
+                  </tr>
+                  <tr>
+                    <td>800</td>
+                    <td>41</td>
+                  </tr>
+                  <tr>
+                    <td>900</td>
+                    <td>34</td>
                   </tr>
                 </tbody>
               </table>

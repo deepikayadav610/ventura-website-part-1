@@ -422,7 +422,7 @@ export default function DB6() {
       {/* stocking partner */}
       <section className="stocking-partners py-5">
         <div className="container text-center">
-          <h2 className="section-title mb-4">Stocking Partners</h2>
+          <h2 className="section-title1 mb-4">Stocking Partners</h2>
           <p className="lead">
             We keep the materials from <strong>Germany</strong>,
             <strong> Japan</strong> and <strong>China</strong>.
@@ -452,7 +452,7 @@ export default function DB6() {
         <Link to="/enquiry" className="btn btn-primary">
           Request an Enquiry
         </Link>
-        {/* <span>MOQ: 200 kg | Price: ₹135/kg*</span> */}
+        <span>MOQ: 0.33 Tonnes </span>
       </div>
     </div>
   );

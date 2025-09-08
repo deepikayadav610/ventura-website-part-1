@@ -1,11 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './H11.css'
 
-export default function H11() {
+export default function H10() {
   return (
     <div className="grade-details">
-      <h2 className="text-center">H11 / AISI H 11 / DIN 2343 </h2>
+      <h2 className="text-center"> H10 / AISI H10 / DIN 1.2365 / SKD7</h2>
       <p className="subtitle text-center">
         Premium Hot Work Tool Steel with high toughness & wear resistance.
       </p>
@@ -18,12 +17,11 @@ export default function H11() {
                 <td>
                   <strong>STANDARDS</strong>
                 </td>
-                <td>X37CrMoV5</td>
-                <td>H11</td>
-                <td>DIN 2343</td>
-                <td>AISI H11</td>
-                <td>AFNOR Z38CDV5</td>
-                <td>JIS SKD6</td>
+                <td>X210CrW12</td>
+                <td>H10</td>
+                <td>DIN 2365</td>
+                <td>AISI H10</td>
+                <td>AFNOR 32CDV12-28</td>
               </tr>
             </tbody>
           </table>
@@ -31,53 +29,33 @@ export default function H11() {
       </div>
 
       {/* Overview */}
-      <section className="overview d-flex justify-content-center align-items-center gap-5">
+      <section className="overview d-flex justify-content-center align-items-center gap-5 mb-4">
         <div className="overview-content">
           <p>
-            Ventura Alloy and Steels Supplies and Stocks AISI H11 tool steel is
-            a 5% chromium hot work tool steel that is represented by its
-            excellent impact toughness. Chromium hot-work tool steels are
-            designated as group H steels according to the AISI classification
-            system, and specified in ASTM A681 standard. The most commonly used
-            chromium hot-work steels are H11 tool steel, H12 tool steel, and H13
-            steel, within the series from H1 to H19
-          </p>
-          <p>
-            If we compare between H11 and H13, H11 tool steel consists of less
-            vanadium than the commonly used H13 hot work tool steel. This gives
-            H11 steels the higher toughness, with some reduction in wear
-            resistance and tamper resistance. H11 tool steel is a
-            deep-hardening, air-hardening steel and H11 alloy steel could be
-            deep hardened by heat treatment and air-quenching. That gives
-            minimal size change during heat treatment. H11 how work steel also
-            has super resistance to thermal fatigue cracking and superb
-            resistance to gross cracking and thermal shock when water cooled in
-            service.
-          </p>
-          <p>
-            H11 steel is inclusive of all hot work tool steel with excellent
-            rigidity and durability along with great thermal conductivity and
-            invulnerability to hot cracking and can be water cooled to a
-            constrained degree. H11 is primarily used for apparatus holders ,
-            ejector pins and shrink fit chucks.
+            Ventura Alloy and Steels Supplies & Stocks H10 Steel in India and
+            abroad. H10 is an amazing high-temperature quality and treating
+            resistance, thermal conductivity and low powerlessness to hot
+            cracking. It can be water cooled to a restricted degree and also
+            suitable for cold hobbling. Utilized for press and penetrating
+            mandrels pass on supplements, massive metal die casting tools.
           </p>
         </div>
         <div className="db6-img">
           <img
-            src="/image/Hot Work Tool Steels/H 11 Hot Work Tool Steel Round Bars.png"
+            src="/image/Hot Work Tool Steels/Hot Work Steel DB 6 Block.png"
             alt="DB6 Image"
-            width={400}
+            width={300}
           />
         </div>
       </section>
 
       {/* Chemical Composition */}
-      <section className="h11-composition">
+      <section className="db6-composition">
         <h3 className="mb-4 text-center">
           Chemical Composition (Typical Analysis in %)
         </h3>
         <div className="table-data d-flex justify-content-center gap-5">
-          <div className="h11-chemical-composition">
+          <div className="db6-chemical-composition db6-composition-table">
             <table>
               <thead>
                 <tr>
@@ -88,15 +66,15 @@ export default function H11() {
               <tbody>
                 <tr>
                   <td>C</td>
-                  <td>0.33-0.41</td>
+                  <td>0.28-0.35</td>
                 </tr>
                 <tr>
                   <td>Si</td>
-                  <td>0.80-1.00</td>
+                  <td>0.10-0.400000 </td>
                 </tr>
                 <tr>
                   <td>Mn</td>
-                  <td>0.25-0.50</td>
+                  <td>0.20-0.40</td>
                 </tr>
                 <tr>
                   <td>P</td>
@@ -104,25 +82,25 @@ export default function H11() {
                 </tr>
                 <tr>
                   <td>S</td>
-                  <td>0.030max</td>
+                  <td>0.030 max</td>
                 </tr>
                 <tr>
                   <td>Cr</td>
-                  <td>4.80-5.50</td>
+                  <td>2.70-3.20</td>
                 </tr>
                 <tr>
                   <td>Mo</td>
-                  <td>1.10-1.50</td>
+                  <td>2.50-3.00</td>
                 </tr>
                 <tr>
                   <td>V</td>
-                  <td>0.30-0.50</td>
+                  <td>0.40 – 0.75</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <div className="h11-name-table">
+          <div className="db6-name-table">
             <table>
               <thead>
                 <tr>
@@ -135,42 +113,22 @@ export default function H11() {
                 <tr>
                   <td>USA</td>
                   <td>AISI / SAE</td>
-                  <td>H11</td>
-                </tr>
-                <tr>
-                  <td>Europe</td>
-                  <td>En</td>
-                  <td>X37CrMoV5-1</td>
+                  <td>H10 / T20810</td>
                 </tr>
                 <tr>
                   <td>Germany</td>
                   <td>DIN, WNr</td>
-                  <td>X38CrMoV5-1</td>
+                  <td>1.2365 / 32CrMoV12-28</td>
                 </tr>
                 <tr>
-                  <td>China</td>
-                  <td>GB</td>
-                  <td>4Cr5MoSiV </td>
+                  <td>Japan</td>
+                  <td>JIS G4404</td>
+                  <td>SKD7 </td>
                 </tr>
                 <tr>
-                  <td>Japan </td>
-                  <td>JIS</td>
-                  <td>SKD6</td>
-                </tr>
-                <tr>
-                  <td>India</td>
-                  <td>IS</td>
-                  <td>XT35Cr5Mo1V3</td>
-                </tr>
-                <tr>
-                  <td>R. of Korea</td>
-                  <td>KS</td>
-                  <td>STD 6</td>
-                </tr>
-                <tr>
-                  <td>Russia</td>
-                  <td>GOST</td>
-                  <td>4Ch5MFS</td>
+                  <td>British </td>
+                  <td>BS 4659</td>
+                  <td>BH10</td>
                 </tr>
               </tbody>
             </table>
@@ -178,46 +136,16 @@ export default function H11() {
         </div>
       </section>
 
-      {/* size-range */}
-      <section className="size-range">
-        <h3>Size Range</h3>
-        <table className="size-table">
-          <thead>
-            <tr>
-              <th>Shape</th>
-              <th>Dimensions</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>ROUNDS </td>
-              <td>71 to 300 MM DIA</td>
-            </tr>
-            <tr>
-              <td>FLATS </td>
-              <td>
-                Thickness: 20 to 400 MM MAX
-                <br />
-                Width: 40 to 700 MM MAX
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-
       {/* Steel properties */}
       <section className="steel-properties">
         <h2>Steel Properties</h2>
         <ul>
-          <li>Contains 5% Chromium</li>
-          <li>Greater strength</li>
-          <li>High toughness</li>
-          <li>Best thermal physical phenomenon</li>
-          <li>Resistant to hot cracking</li>
-          <li>
-            Gives fundamental necessities to long tool life in press forging,
-            die-casting, extrusion processes etc.
-          </li>
+          <li>Hot Work Steel H10 is equivalent steel of DIN 2365</li>
+          <li>Great tempering resistance</li>
+          <li>Less susceptible for high hot cracking</li>
+          <li>Excellent thermal conductivity</li>
+          <li>High-temperature durability</li>
+          <li>Can be water-cooled to a constrained degree</li>
         </ul>
       </section>
 
@@ -225,10 +153,9 @@ export default function H11() {
       <section className="applications">
         <h2>Applications</h2>
         <p>
-          This grade isn’t utilized for typical applications in the area of
-          hot-work steels, yet additionally useful for tool holders, bridge kind
-          tools, ejector pins, liner holders, hot work punches, forging dies,
-          and shrink work chucks.
+          This tool steel is used for hot press and mandrels, press die inserts
+          and forging die, remarkable hot metal die casting tools, die-casting
+          moulds for non-ferrous overwhelming metal pressure die-casting.
         </p>
       </section>
 
@@ -254,27 +181,27 @@ export default function H11() {
                   </tr>
                   <tr>
                     <td>20-200</td>
-                    <td>12.3</td>
+                    <td>12.4</td>
                   </tr>
                   <tr>
                     <td>20-300</td>
-                    <td>12.5</td>
-                  </tr>
-                  <tr>
-                    <td>20-400</td>
                     <td>12.7</td>
                   </tr>
                   <tr>
+                    <td>20-400</td>
+                    <td>13.2</td>
+                  </tr>
+                  <tr>
                     <td>20-500</td>
-                    <td>12.75</td>
+                    <td>13.5</td>
                   </tr>
                   <tr>
                     <td>20-600</td>
-                    <td>12.9</td>
+                    <td>13.7</td>
                   </tr>
                   <tr>
                     <td>20-700</td>
-                    <td>12.9</td>
+                    <td>13.8</td>
                   </tr>
                 </tbody>
               </table>
@@ -288,25 +215,21 @@ export default function H11() {
                 <thead>
                   <tr>
                     <th>Temperature (°C)</th>
-                    <th>W / (m*K) Annealed</th>
-                    <th>W / (m*K) Quenched & Tempered</th>
+                    <th>W / (m*K)</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>20</td>
-                    <td>29.8</td>
-                    <td>26.5</td>
+                    <td>32.6</td>
                   </tr>
                   <tr>
                     <td>350</td>
-                    <td>30.0</td>
-                    <td>27.4</td>
+                    <td>34.4</td>
                   </tr>
                   <tr>
                     <td>700</td>
-                    <td>35.5</td>
-                    <td>30.4</td>
+                    <td>32.4</td>
                   </tr>
                 </tbody>
               </table>
@@ -328,7 +251,7 @@ export default function H11() {
                 <tbody>
                   <tr>
                     <th>Soft Annealing °C</th>
-                    <td>750-800</td>
+                    <td>740-800</td>
                   </tr>
                   <tr>
                     <th>Cooling</th>
@@ -336,23 +259,19 @@ export default function H11() {
                   </tr>
                   <tr>
                     <th>Hardness HB</th>
-                    <td>max. 230</td>
-                  </tr>
-                  <tr>
-                    <th>Stress-Relief Annealing °C</th>
-                    <td>approx. 600-650</td>
+                    <td>max. 185</td>
                   </tr>
                   <tr>
                     <th>Hardening °C</th>
-                    <td>1000-1030</td>
+                    <td>1040-1060</td>
                   </tr>
                   <tr>
                     <th>Quenching</th>
-                    <td>Air, Oil, Salt Bath 500-550°C</td>
+                    <td>Oil or Hot Bath 500-550°Cr</td>
                   </tr>
                   <tr>
                     <th>Hardness after Quenching HRC</th>
-                    <td>54</td>
+                    <td>52</td>
                   </tr>
                 </tbody>
               </table>
@@ -373,27 +292,27 @@ export default function H11() {
                 <tbody>
                   <tr>
                     <td>100</td>
-                    <td>52</td>
+                    <td>51</td>
                   </tr>
                   <tr>
                     <td>210</td>
-                    <td>52</td>
+                    <td>50.5</td>
                   </tr>
                   <tr>
                     <td>300</td>
-                    <td>52</td>
+                    <td>50</td>
                   </tr>
                   <tr>
                     <td>400</td>
-                    <td>52</td>
+                    <td>50</td>
                   </tr>
                   <tr>
                     <td>500</td>
-                    <td>54</td>
+                    <td>53</td>
                   </tr>
                   <tr>
                     <td>550</td>
-                    <td>53</td>
+                    <td>51</td>
                   </tr>
                   <tr>
                     <td>600</td>
@@ -401,32 +320,15 @@ export default function H11() {
                   </tr>
                   <tr>
                     <td>650</td>
-                    <td>37</td>
+                    <td>41</td>
                   </tr>
                   <tr>
                     <td>700</td>
-                    <td>31</td>
+                    <td>34</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* stocking partner */}
-      <section className="stocking-partners py-5">
-        <div className="container text-center">
-          <h2 className="section-title mb-4">Stocking Partners</h2>
-          <p className="lead">
-            We keep the materials from <strong>China</strong>.
-          </p>
-          <div className="partner-flags mt-4">
-            <img
-              src="/image/china-flag.png"
-              alt="China Flag"
-              className="flag-img mx-3"
-            />
           </div>
         </div>
       </section>
@@ -436,7 +338,7 @@ export default function H11() {
         <Link to="/enquiry" className="btn btn-primary">
           Request an Enquiry
         </Link>
-        <span>MOQ: 5 Tonnes</span>
+        <span>MOQ: 5 Tonnes </span>
       </div>
     </div>
   );
