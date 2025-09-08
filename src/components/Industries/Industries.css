@@ -91,17 +91,17 @@
 }
 
 /* Mobile carousel tweaks */
-.carousel .industry-card {
+.industries-carousel.carousel .industry-card {
   margin: 0 auto;
   max-width: 85%;
-  height: 30vh;
+  height: 35vh;
 }
 
-.carousel .carousel-item {
-  height: 30vh;
+.industries-carousel .carousel .carousel-item {
+  height: 35vh;
 }
 
-.carousel .carousel-item {
+.industries-carousel .carousel .carousel-item {
   min-height: 25vh;
 }
 .industries-section h2 {

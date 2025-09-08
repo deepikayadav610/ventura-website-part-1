@@ -69,7 +69,7 @@ export default function IndustriesSection() {
       </div>
 
       {/* Carousel for Mobile */}
-      <div className="d-md-none">
+      <div className="d-md-none industries-carousel">
         <Carousel indicators={false} interval={3000} pause="hover">
           {industries.map((item, index) => (
             <Carousel.Item key={index}>
