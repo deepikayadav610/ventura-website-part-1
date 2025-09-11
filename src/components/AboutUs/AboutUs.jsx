@@ -44,11 +44,20 @@ const AboutUs = () => {
 
       <div className="about-section">
         {/* banner */}
-        <section className=" about-banner py-3">
-          {/* <img src="/image/Spring Steel Round Bars.png" alt="ventura about banner" /> */}
-          <video autoPlay loop muted className="bg-video">
+        <section className="about-banner py-3">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="bg-video"
+            title="Ventura Steels Quality Standards – Steel Round Bars Manufacturing"
+            aria-label="Ventura Steels quality video showcasing steel round bars and manufacturing process"
+            poster="/image/Cold Work Tool Steels/Cold Work Steel 1.2379 Flat Bars.png"
+          >
             <source src="/videoes/quality.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
+            Ventura Steels quality video showcasing round bars and steel
+            manufacturing process.
           </video>
         </section>
 
@@ -280,9 +289,14 @@ const AboutUs = () => {
 
         {/* team section */}
         <section className="our-team-section container my-5" data-aos="fade-up">
-          <h2 className="text-center fw-bold">The Human Capital Behind Ventura’s Success</h2>
+          <h2 className="text-center fw-bold">
+            The Human Capital Behind Ventura’s Success
+          </h2>
           <hr className="heading " />
-          <p className="text-center mb-5">Skilled teams powering every step of our operations — from sourcing to delivery.</p>
+          <p className="text-center mb-5">
+            Skilled teams powering every step of our operations — from sourcing
+            to delivery.
+          </p>
 
           <div className="row g-4 px-3">
             {[

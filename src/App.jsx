@@ -30,6 +30,11 @@ import H21 from "./components/Products/Hot-Work/Grades/H21/H21.jsx";
 import H10 from "./components/Products/Hot-Work/Grades/H10/H10.jsx";
 import H12 from "./components/Products/Hot-Work/Grades/H12/H12.jsx";
 
+// Cold Work Steel
+import ColdWork from "./components/Products/Cold-Work/cold-work.jsx";
+import D2 from "./components/Products/Cold-Work/Grades/D2/D2.jsx";
+import D3 from "./components/Products/Cold-Work/Grades/D3/D3.jsx";
+
 // Boron Steels
 import Boron from "./components/Products/Boron-Steel/boron-steel.jsx";
 import Boron10B21 from "./components/Products/Boron-Steel/Grades/10B21/10B21.jsx";
@@ -63,6 +68,12 @@ const App = () => {
             <Route path="H10" element={<H10 />} />
             <Route path="H12" element={<H12 />} />
           </Route>
+
+          <Route path="/products/cold-work" element={<ColdWork />}>
+            <Route path="D2" element={<D2 />} />
+            <Route path="D3" element={<D3 />} />
+          </Route>
+
           <Route path="/products/boron-steel" element={<Boron />}>
             <Route path="10B21" element={<Boron10B21 />} />
             <Route path="15B25" element={<Boron15B25 />} />

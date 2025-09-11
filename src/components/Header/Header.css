@@ -40,7 +40,7 @@
 .bg-social i {
   color: #393185;
 }
-.bg-social a{
+.bg-social a {
   color: #393185;
 }
 .bg-navbar {
@@ -50,7 +50,10 @@
   z-index: 999 !important;
   background-color: #393185;
 }
-
+.bg-navbar .middle-logo {
+  max-height: 60px;
+  height: 100%;
+}
 .contact-info {
   flex-wrap: wrap;
 }
@@ -136,10 +139,27 @@
   .bg-social .gap-3 {
     gap: 0.5rem !important;
   }
+  .bg-social .px-5 {
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+  }
   .middle-logo {
     max-height: 40px !important;
   }
   .product-container {
     width: 85% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bg-social .px-5 {
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+  }
+}
+
+@media screen and (max-width: 1302px) {
+  .bg-navbar .middle-logo {
+    max-height: 50px ;
+    height: 100%;
   }
 }

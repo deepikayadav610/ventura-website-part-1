@@ -457,6 +457,9 @@ body {
   .supplier-logo {
     width: 120px;
   }
+   .quality-infra h5 {
+    font-size: 1rem !important;
+  }
 }
 
 @media (max-width: 768px) {

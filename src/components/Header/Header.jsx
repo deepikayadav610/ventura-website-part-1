@@ -58,31 +58,35 @@ export default function Header() {
     <>
       {/* Top-Contact + Social */}
       <div className={`py-1 bg-social ${hideTopBar ? "hide" : ""}`}>
-        <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center text-center">
+        <div className=" d-flex flex-column flex-md-row justify-content-between align-items-center text-center px-5">
           <div className="d-flex justify-content-center gap-3 small contact-info">
             <a
               href="mailto:sales@venturasteels.com"
               className="text-decoration-none"
+              title="Email Sales - Ventura Steels"
             >
               <span>
-                <i className="bi bi-envelope me-1"></i>
+                <i className="bi bi-envelope-fill me-1" aria-hidden="true"></i>
                 sales@venturasteels.com
               </span>
             </a>
             <a
               href="mailto:sales@venturasteels.com"
               className="text-decoration-none"
+              title="Email Enquiry - Ventura Steels"
             >
               <span>
-                <i className="bi bi-envelope me-1"></i>
+                <i className="bi bi-envelope-fill me-1" aria-hidden="true"></i>
                 enquiry@venturasteels.com
               </span>
             </a>
             <span>
-              <i className="bi bi-telephone me-1"></i>Tel.: +91 22 2869 3824
+              <i className="bi bi-telephone-fill me-1" aria-hidden="true"></i>
+              Tel.: +91 22 2869 3824
             </span>
             <span>
-              <i className="bi bi-telephone me-1"></i>Cell: +91 9819225666
+              <i className="bi bi-telephone-fill me-1" aria-hidden="true"></i>
+              Cell: +91 9819225666
             </span>
           </div>
           <div className="d-flex justify-content-center gap-3 mt-2 mt-md-0">
@@ -90,6 +94,8 @@ export default function Header() {
               href="https://www.facebook.com/VenturaSteels"
               target="_blank"
               rel="noreferrer"
+              aria-label="Visit Ventura Steels on Facebook"
+              title="Ventura Steels Facebook"
             >
               <i className="bi bi-facebook"></i>
             </a>
@@ -97,10 +103,18 @@ export default function Header() {
               href="https://www.instagram.com/venturasteels/?__pwa=1"
               target="_blank"
               rel="noreferrer"
+              aria-label="Visit Ventura Steels on Instagram"
+              title="Ventura Steels Instagram"
             >
               <i className="bi bi-instagram"></i>
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Visit Ventura Steels on LinkedIn"
+              title="Ventura Steels LinkedIn"
+            >
               <i className="bi bi-linkedin"></i>
             </a>
           </div>
@@ -120,7 +134,7 @@ export default function Header() {
           <span className="navbar-brand mb-0 h1">
             <img
               src="/image/logo-v.png"
-              alt="Ventura Logo"
+              alt="Ventura Steels company logo – Leading steel supplier in India"
               height={40}
               className="rounded"
             />
@@ -167,8 +181,7 @@ export default function Header() {
         <div className="bg-white py-3 text-center ">
           <img
             src="/image/ventura-logo.jpg"
-            alt="Ventura Steels"
-            style={{ maxHeight: "60px" }}
+            alt="Ventura Steels company logo – Leading steel supplier in India"
             className="middle-logo"
           />
         </div>

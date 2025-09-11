@@ -91,7 +91,7 @@ export default function Home() {
     {
       title: "Boron Steel",
       desc: "Hard steel for cutting & shaping tools.",
-      img: "/image/product.jpeg",
+      img: "/image/Boron Steels/10B35 Boron Steel Round Bars 2.png",
       link: "/products/boron-steel",
     },
   ];
@@ -188,7 +188,7 @@ export default function Home() {
           <div className="col-md-6 welcome-end text-end" data-aos="fade-in">
             <img
               src="/image/steel forging.png"
-              alt="Ventura Company"
+              alt="Steel forging process – hot glowing metal shaped with hammer and tongs"
               className="img-fluid"
             />
           </div>
@@ -348,7 +348,7 @@ export default function Home() {
             <div className="col-lg-6 text-center mt-3" data-aos="fade-left">
               <img
                 src="/image/about-ventura.png"
-                alt="What Ventura Do"
+                alt="Molten steel being poured from crucible into molds in a foundry"
                 className="img-fluid rounded shadow-lg what-img"
               />
             </div>
@@ -366,7 +366,7 @@ export default function Home() {
             <div className="col-6 col-sm-4 col-md-2 mb-4" data-aos="zoom-in">
               <img
                 src="/image/jsw-logo.png"
-                alt="Supplier 1"
+                alt="JSW Steel – Trusted Supplier"
                 className="img-fluid supplier-logo"
               />
             </div>
@@ -377,7 +377,7 @@ export default function Home() {
             >
               <img
                 src="/image/dongbe-logo.png"
-                alt="Supplier 2"
+                alt="Dongbei Special Steel Group China – Trusted Supplier"
                 className="img-fluid supplier-logo text-center"
               />
             </div>
@@ -388,7 +388,7 @@ export default function Home() {
             >
               <img
                 src="/image/bhushan-logo.png"
-                alt="Supplier 3"
+                alt="Bhushan Steel – Trusted Supplier"
                 className="img-fluid supplier-logo"
               />
             </div>
@@ -399,7 +399,7 @@ export default function Home() {
             >
               <img
                 src="/image/RL steels logo.png"
-                alt="Supplier 4"
+                alt="R. L. Steels & Energy Ltd. – Trusted Supplier"
                 className="img-fluid supplier-logo"
               />
             </div>
@@ -410,7 +410,7 @@ export default function Home() {
             >
               <img
                 src="/image/superforgings logo.png"
-                alt="Supplier 5"
+                alt="Superforgings & Steels Ltd. – Trusted Supplier"
                 className="img-fluid supplier-logo"
               />
             </div>

@@ -16,11 +16,8 @@ const Footer = () => {
                 width={150}
                 height={100}
                 className="mb-4 footer-logo"
-              
               />
-              <h5 className="footer-title" >
-                Ventura Alloy & Steel Pvt Ltd
-              </h5>
+              <h5 className="footer-title">Ventura Alloy & Steel Pvt Ltd</h5>
               <p className="text-justify">
                 Delivering quality steel solutions with integrity and
                 innovation. Serving industries with precision-engineered
@@ -145,9 +142,6 @@ const Footer = () => {
                 </a>
                 <a href="https://linkedin.com" target="_blank" rel="noreferrer">
                   <i className="bi bi-linkedin"></i>
-                </a>
-                <a href="https://twitter.com" target="_blank" rel="noreferrer">
-                  <i className="bi bi-twitter"></i>
                 </a>
               </div>
             </div>
