@@ -73,9 +73,9 @@ const Quality = () => {
       <section className="container py-5 quality-cert">
         <div className="d-flex justify-content-center align-items-center certification-section gap-5">
           <div className="col-md-3 mb-4 mb-md-0">
-            <a href="/image/certificates/ISO-Certificate-1.jpg">
+            <a href="/image/certificates/BSCIC-ISO.png">
               <img
-                src="/image/certificates/ISO-Certificate-1.jpg"
+                src="/image/certificates/BSCIC-ISO.png"
                 alt="Quality Certificate"
                 className="img-fluid rounded shadow"
               />
@@ -89,7 +89,7 @@ const Quality = () => {
                 className="quality-list text-center  list-unstyled mb-3"
                 data-aos="zoom-in-up"
               >
-                ISO 9001:2015 Certified by DAS
+                ISO 9001:2015 Certified by BSCIC
               </li>
               <li
                 className="quality-list text-center  list-unstyled mb-3"

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Table from "react-bootstrap/Table"; 
+import "bootstrap/dist/css/bootstrap.min.css";
+import Table from "react-bootstrap/Table";
 import "./D5.css";
 
 export default function D5() {
@@ -161,7 +161,8 @@ export default function D5() {
       <section className="applications">
         <h2>Applications</h2>
         <p>
-       Applications of D5 steels include thread rolling, blanking or forming dies operating at temperatures below 482°C (900°F).
+          Applications of D5 steels include thread rolling, blanking or forming
+          dies operating at temperatures below 482°C (900°F).
         </p>
       </section>
 
@@ -234,48 +235,50 @@ export default function D5() {
 
       {/* heat treatment */}
       <div className="heat-treatment-data my-4">
-      <h3 className="text-center mb-3">Heat Treatment Data</h3>
-      <Table bordered hover responsive className="text-center align-middle">
-        <thead className="custom-header">
-          <tr>
-            <th>Process</th>
-            <th>Temperature Range</th>
-            <th>Details / Notes</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Preheating</td>
-            <td>815 °C (1500 °F)</td>
-            <td>Heat very slowly before raising temperature further</td>
-          </tr>
-          <tr>
-            <td>Hardening (Austenitizing)</td>
-            <td>1009 °C (1850 °F)</td>
-            <td>Hold for 20–45 minutes, then <strong>air quench</strong></td>
-          </tr>
-          <tr>
-            <td>Forging</td>
-            <td>1065 °C (1950 °F) → 926 °C (1700 °F)</td>
-            <td>Do not forge below 926 °C (1700 °F)</td>
-          </tr>
-          <tr>
-            <td>Annealing</td>
-            <td>886 °C (1627 °F)</td>
-            <td>Slow furnace cooling at ≤ 4 °C (40 °F) per hour</td>
-          </tr>
-          <tr>
-            <td>Tempering</td>
-            <td>204 °C (400 °F) → 537 °C (1000 °F)</td>
-            <td>
-              Rockwell C Hardness: <br />
-              <strong>61 HRC</strong> at 204 °C <br />
-              <strong>54 HRC</strong> at 537 °C
-            </td>
-          </tr>
-        </tbody>
-      </Table>
-    </div>
+        <h3 className="text-center mb-3">Heat Treatment Data</h3>
+        <Table bordered hover responsive className="text-center align-middle">
+          <thead className="custom-header">
+            <tr>
+              <th>Process</th>
+              <th>Temperature Range</th>
+              <th>Details / Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Preheating</td>
+              <td>815 °C (1500 °F)</td>
+              <td>Heat very slowly before raising temperature further</td>
+            </tr>
+            <tr>
+              <td>Hardening (Austenitizing)</td>
+              <td>1009 °C (1850 °F)</td>
+              <td>
+                Hold for 20–45 minutes, then <strong>air quench</strong>
+              </td>
+            </tr>
+            <tr>
+              <td>Forging</td>
+              <td>1065 °C (1950 °F) → 926 °C (1700 °F)</td>
+              <td>Do not forge below 926 °C (1700 °F)</td>
+            </tr>
+            <tr>
+              <td>Annealing</td>
+              <td>886 °C (1627 °F)</td>
+              <td>Slow furnace cooling at ≤ 4 °C (40 °F) per hour</td>
+            </tr>
+            <tr>
+              <td>Tempering</td>
+              <td>204 °C (400 °F) → 537 °C (1000 °F)</td>
+              <td>
+                Rockwell C Hardness: <br />
+                <strong>61 HRC</strong> at 204 °C <br />
+                <strong>54 HRC</strong> at 537 °C
+              </td>
+            </tr>
+          </tbody>
+        </Table>
+      </div>
 
       {/* stocking partner */}
       <section className="stocking-partners py-5">

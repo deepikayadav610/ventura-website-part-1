@@ -17,12 +17,11 @@ import {
 
 const productOptions = {
   "Hot Work Steel": [
-    "DB6 / DIN 2714 / AISI L6",
-    "H13 / AISI H 13 / DIN 2344",
-    "H11 / AISI H 11 / DIN 2343",
-    "H21 / AISI H21 / DIN 1.2581",
-    " H10 / AISI H10 / DIN 1.2365 / SKD7",
-    "H12 / AISI H12 / DIN 1.2606",
+    "DB6 / 2714 / AISI L6",
+    "H13 / 2344",
+    "H11 / 2343",
+    "H10 / 2365 / SKD7",
+    "H12 / 2606",
   ],
   "Cold Work Steel": [
     "D2 / 2379 / HCHCR D2",
@@ -170,8 +169,26 @@ export default function EnquiryForm() {
   };
 
   const handleShapeChange = (grade, shape) => {
-    setGradeShapes((prev) => ({ ...prev, [grade]: shape }));
+    setGradeShapes((prev) => ({
+      ...prev,
+      [grade]: {
+        shape,
+        ...(shape === "Round Bar"
+          ? { diameter: "", quantity: "", pieces: "" }
+          : { thickness: "", width: "", quantity: "" }),
+      },
+    }));
     setTouchedFields((prev) => ({ ...prev, [`shape-${grade}`]: true }));
+  };
+
+  const handleShapeFieldChange = (grade, field, value) => {
+    setGradeShapes((prev) => ({
+      ...prev,
+      [grade]: {
+        ...prev[grade],
+        [field]: value,
+      },
+    }));
   };
 
   const isFormValid = () => {
@@ -391,42 +408,51 @@ export default function EnquiryForm() {
                     {selectedGrades.map((grade) => (
                       <div
                         key={grade}
-                        className="selected-grade-tag d-flex align-items-center gap-3 mb-2"
+                        className="selected-grade-tag d-flex flex-column gap-2 mb-2"
                       >
-                        <span className="badge bg-secondary grade-selected">
-                          {grade}
-                        </span>
-                        {!confirmGrades && (
-                          <button
-                            type="button"
-                            className="btn btn-sm close-btn"
-                            onClick={() => removeGrade(grade)}
-                          >
-                            &times;
-                          </button>
-                        )}
-                        {confirmGrades && (
-                          <select
-                            className={`select-shape w-auto ${
-                              errors[grade] ? "is-invalid" : ""
-                            }`}
-                            value={gradeShapes[grade] || ""}
-                            onChange={(e) =>
-                              handleShapeChange(grade, e.target.value)
-                            }
-                          >
-                            <option value="">Select Shape</option>
-                            <option value="Round Bar">Round Bar</option>
-                            <option value="Block">Block</option>
-                          </select>
-                        )}
-                        {errors[grade] && (
-                          <div className="invalid-feedback">
-                            {errors[grade]}
-                          </div>
-                        )}
+                        <div className="d-flex align-items-center gap-3">
+                          <span className="badge bg-secondary">{grade}</span>
+                          {!confirmGrades && (
+                            <button
+                              type="button"
+                              className="btn btn-sm close-btn"
+                              onClick={() => removeGrade(grade)}
+                            >
+                              &times;
+                            </button>
+                          )}
+
+                          {confirmGrades && (
+                            <select
+                              className={`select-shape w-auto ${
+                                errors[grade] ? "is-invalid" : ""
+                              }`}
+                              value={gradeShapes[grade]?.shape || ""}
+                              onChange={(e) =>
+                                handleShapeChange(grade, e.target.value)
+                              }
+                            >
+                              <option value="">Select Shape</option>
+                              <option value="Round Bar">Round Bar</option>
+                              <option value="Block">Block</option>
+                            </select>
+                          )}
+                          {errors[grade] && (
+                            <div className="invalid-feedback">
+                              {errors[grade]}
+                            </div>
+                          )}
+                        </div>
+
+                        {/* Dynamic fields */}
+                        <ShapeFields
+                          grade={grade}
+                          data={gradeShapes[grade]}
+                          onChange={handleShapeFieldChange}
+                        />
                       </div>
                     ))}
+
                     {!confirmGrades && (
                       <button
                         type="button"
@@ -474,6 +500,92 @@ export default function EnquiryForm() {
     </>
   );
 }
+
+const ShapeFields = ({ grade, data, onChange }) => {
+  if (!data?.shape) return null;
+
+  if (data.shape === "Round Bar") {
+    return (
+      <div className="row g-2 mt-2">
+        <div className="col-md-4">
+          <input
+            type="number"
+            className="form-control"
+            placeholder="Diameter (mm)"
+            value={data.diameter}
+            onChange={(e) => onChange(grade, "diameter", e.target.value)}
+            min="1"
+            step="1"
+          />
+        </div>
+        <div className="col-md-4">
+          <input
+            type="number"
+            className="form-control"
+            placeholder="Quantity"
+            value={data.quantity}
+            onChange={(e) => onChange(grade, "quantity", e.target.value)}
+            min="1"
+            step="1"
+          />
+        </div>
+        <div className="col-md-4">
+          <input
+            type="number"
+            className="form-control"
+            placeholder="No. of Pieces"
+            value={data.pieces}
+            onChange={(e) => onChange(grade, "pieces", e.target.value)}
+            min="1"
+            step="1"
+          />
+        </div>
+      </div>
+    );
+  }
+
+  if (data.shape === "Block") {
+    return (
+      <div className="row g-2 mt-2">
+        <div className="col-md-4">
+          <input
+            type="number"
+            className="form-control"
+            placeholder="Thickness (mm)"
+            value={data.thickness}
+            onChange={(e) => onChange(grade, "thickness", e.target.value)}
+            min="1"
+            step="1"
+          />
+        </div>
+        <div className="col-md-4">
+          <input
+            type="number"
+            className="form-control"
+            placeholder="Width (mm)"
+            value={data.width}
+            onChange={(e) => onChange(grade, "width", e.target.value)}
+            min="1"
+            step="1"
+          />
+        </div>
+        <div className="col-md-4">
+          <input
+            type="number"
+            className="form-control"
+            placeholder="Quantity"
+            value={data.quantity}
+            onChange={(e) => onChange(grade, "quantity", e.target.value)}
+            min="1"
+            step="1"
+          />
+        </div>
+      </div>
+    );
+  }
+
+  return null;
+};
 
 const InputField = ({
   icon,

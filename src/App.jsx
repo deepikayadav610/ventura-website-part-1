@@ -34,6 +34,7 @@ import H12 from "./components/Products/Hot-Work/Grades/H12/H12.jsx";
 import ColdWork from "./components/Products/Cold-Work/cold-work.jsx";
 import D2 from "./components/Products/Cold-Work/Grades/D2/D2.jsx";
 import D3 from "./components/Products/Cold-Work/Grades/D3/D3.jsx";
+import D5 from "./components/Products/Cold-Work/Grades/D5/D5.jsx";
 
 // Boron Steels
 import Boron from "./components/Products/Boron-Steel/boron-steel.jsx";
@@ -72,6 +73,7 @@ const App = () => {
           <Route path="/products/cold-work" element={<ColdWork />}>
             <Route path="D2" element={<D2 />} />
             <Route path="D3" element={<D3 />} />
+            <Route path="D5" element={<D5 />} />
           </Route>
 
           <Route path="/products/boron-steel" element={<Boron />}>
