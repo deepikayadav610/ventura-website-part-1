@@ -109,8 +109,23 @@ export default function Home() {
           <title>Home | Ventura Alloy & Steels Pvt. Ltd.</title>
           <meta
             name="description"
-            content="Ventura Steels is a trusted steel manufacturer."
+            content="Ventura Steels is a trusted supplier of alloy, carbon, hot work, cold work, and spring steels with certified quality and nationwide delivery."
           />
+          <meta
+            name="keywords"
+            content="Alloy Steel, Carbon Steel, Hot Work Steel, Cold Work Steel, Spring Steel, Ventura Steels India"
+          />
+          <meta
+            property="og:title"
+            content="Ventura Alloy & Steels Pvt. Ltd."
+          />
+          <meta
+            property="og:description"
+            content="Your reliable source for certified steel solutions – alloy, carbon, hot work, cold work, and spring steels."
+          />
+          <meta property="og:image" content="/image/logo-v.png" />
+          <meta property="og:url" content="https://venturasteels.com/" />
+          <meta name="twitter:card" content="summary_large_image" />
         </Helmet>
       </HelmetProvider>
 
@@ -190,6 +205,7 @@ export default function Home() {
               src="/image/steel forging.png"
               alt="Steel forging process – hot glowing metal shaped with hammer and tongs"
               className="img-fluid"
+              loading="lazy"
             />
           </div>
         </div>
@@ -286,7 +302,7 @@ export default function Home() {
                 <div className="product-tile" data-aos="zoom-in-down">
                   <img
                     src={item.img}
-                    alt={item.title}
+                    alt={`${item.title} – ${item.desc} by Ventura Steels`}
                     className="product-image"
                   />
                   <div className="overlay">
@@ -350,6 +366,7 @@ export default function Home() {
                 src="/image/about-ventura.png"
                 alt="Molten steel being poured from crucible into molds in a foundry"
                 className="img-fluid rounded shadow-lg what-img"
+                loading="lazy"
               />
             </div>
           </div>
@@ -368,6 +385,7 @@ export default function Home() {
                 src="/image/jsw-logo.png"
                 alt="JSW Steel – Trusted Supplier"
                 className="img-fluid supplier-logo"
+                loading="lazy"
               />
             </div>
             <div
@@ -379,6 +397,7 @@ export default function Home() {
                 src="/image/dongbe-logo.png"
                 alt="Dongbei Special Steel Group China – Trusted Supplier"
                 className="img-fluid supplier-logo text-center"
+                loading="lazy"
               />
             </div>
             <div
@@ -390,6 +409,7 @@ export default function Home() {
                 src="/image/bhushan-logo.png"
                 alt="Bhushan Steel – Trusted Supplier"
                 className="img-fluid supplier-logo"
+                loading="lazy"
               />
             </div>
             <div
@@ -401,6 +421,7 @@ export default function Home() {
                 src="/image/RL steels logo.png"
                 alt="R. L. Steels & Energy Ltd. – Trusted Supplier"
                 className="img-fluid supplier-logo"
+                loading="lazy"
               />
             </div>
             <div
@@ -412,6 +433,7 @@ export default function Home() {
                 src="/image/superforgings logo.png"
                 alt="Superforgings & Steels Ltd. – Trusted Supplier"
                 className="img-fluid supplier-logo"
+                loading="lazy"
               />
             </div>
           </div>

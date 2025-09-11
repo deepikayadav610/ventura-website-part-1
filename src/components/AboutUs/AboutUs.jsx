@@ -53,7 +53,7 @@ const AboutUs = () => {
             className="bg-video"
             title="Ventura Steels Quality Standards – Steel Round Bars Manufacturing"
             aria-label="Ventura Steels quality video showcasing steel round bars and manufacturing process"
-            poster="/image/Cold Work Tool Steels/Cold Work Steel 1.2379 Flat Bars.png"
+            poster="/image/video-poster.png"
           >
             <source src="/videoes/quality.mp4" type="video/mp4" />
             Ventura Steels quality video showcasing round bars and steel
