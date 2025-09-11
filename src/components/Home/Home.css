@@ -366,7 +366,7 @@ body {
 }
 
 .supplier-logo:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 /* responsive */
@@ -457,7 +457,7 @@ body {
   .supplier-logo {
     width: 120px;
   }
-   .quality-infra h5 {
+  .quality-infra h5 {
     font-size: 1rem !important;
   }
 }

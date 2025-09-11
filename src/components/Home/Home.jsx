@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import "./Home.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
@@ -113,7 +113,7 @@ export default function Home() {
           />
           <meta
             name="keywords"
-            content="Alloy Steel, Carbon Steel, Hot Work Steel, Cold Work Steel, Spring Steel, Ventura Steels India"
+            content="Ventura Steels, Ventura Alloy and Steels, Alloy Steel Supplier India, Hot Work Tool Steel, Cold Work Tool Steel, Spring Steel, Carbon Steel, Plastic Mould Steel, Boron Steel, Steel Supplier, Tool Steel Distributor, Forged Steel Blocks, Industrial Steel Supplier, B2B Steel Supplier India, Quality Certified Steel"
           />
           <meta
             property="og:title"
@@ -245,7 +245,10 @@ export default function Home() {
                   to="/quality"
                   className="text-white text-decoration-none quality-link p-2"
                 >
-                  See more
+                  See more{" "}
+                  <span className="visually-hidden">
+                    about our Quality Standards
+                  </span>
                 </Link>
               </div>
             </div>
@@ -265,7 +268,10 @@ export default function Home() {
                   to="/infrastructure"
                   className="text-white text-decoration-none infra-link p-2"
                 >
-                  See more
+                  See more{" "}
+                  <span className="visually-hidden">
+                    about our Infrastructure
+                  </span>
                 </Link>
               </div>
             </div>
