@@ -39,7 +39,7 @@ const HotWork = () => {
                     location.pathname.includes("DB6") ? "active-grade" : ""
                   }
                 >
-                  DB6 / DIN 2714 / AISI L6
+                  <strong> DB6 / DIN 2714 </strong> / AISI L6
                 </Link>
               </li>
               <li>
@@ -49,7 +49,7 @@ const HotWork = () => {
                     location.pathname.includes("H13") ? "active-grade" : ""
                   }
                 >
-                  H13 / AISI H 13 / DIN 2344
+                  <strong> H13 </strong> / AISI H 13 / DIN 2344
                 </Link>
               </li>
               <li>
@@ -59,7 +59,7 @@ const HotWork = () => {
                     location.pathname.includes("H11") ? "active-grade" : ""
                   }
                 >
-                  H11 / AISI H 11 / DIN 2343
+                  <strong> H11 </strong> / AISI H 11 / DIN 2343
                 </Link>
               </li>
               <li>
@@ -69,7 +69,7 @@ const HotWork = () => {
                     location.pathname.includes("H21") ? "active-grade" : ""
                   }
                 >
-                 H21 / AISI H21 / DIN 1.2581
+                  H21 / AISI H21 / DIN 1.2581
                 </Link>
               </li>
               <li>
@@ -79,7 +79,7 @@ const HotWork = () => {
                     location.pathname.includes("H10") ? "active-grade" : ""
                   }
                 >
-                    H10 / AISI H10 / DIN 1.2365 / SKD7
+                  H10 / AISI H10 / DIN 1.2365 / SKD7
                 </Link>
               </li>
               <li>

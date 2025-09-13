@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./H21.css"
+import "./H21.css";
 
 export default function H21() {
   return (
@@ -345,6 +345,27 @@ export default function H21() {
                 </tbody>
               </table>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Availability */}
+      <section className="availability-info my-4">
+        <div className="container">
+          <h4 className="mb-3">Availability</h4>
+          <p>
+            All grades of H21 / AISI H21 / DIN 1.2581 are available on
+            <strong> advance order</strong> basis on <strong>MOQ</strong> as per
+            size requirements.
+          </p>
+
+          <div className="note-box mt-3 p-3 rounded">
+            <h5 className="note-title">Additional Services</h5>
+            <p>
+              We also source forgings as per the required grades, size, and
+              supply specifications. Additionally, we have an in-house cutting
+              facility to meet customized requirements.
+            </p>
           </div>
         </div>
       </section>

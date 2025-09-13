@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './H11.css'
+import "./H11.css";
 
 export default function H11() {
   return (
     <div className="grade-details">
-      <h2 className="text-center">H11 / AISI H 11 / DIN 2343 </h2>
+      <h2 className="text-center">
+        <strong> H11</strong> / AISI H 11 / DIN 2343{" "}
+      </h2>
       <p className="subtitle text-center">
         Premium Hot Work Tool Steel with high toughness & wear resistance.
       </p>
@@ -203,6 +205,35 @@ export default function H11() {
             </tr>
           </tbody>
         </table>
+      </section>
+
+      {/* process route */}
+      <section className="process-route mx-auto mt-3">
+        <h3>Process Route</h3>
+        <p className="text-muted text-center">
+          Applicable for <strong>H11 / AISI H11 / DIN 2343</strong>
+        </p>
+        <div className="process-flow">
+          <div className="step">EAF</div>
+          <span className="arrow">→</span>
+          <div className="step">LF</div>
+          <span className="arrow">→</span>
+          <div className="step">VD</div>
+          <span className="arrow">→</span>
+          <div className="step">ESR</div>
+          <span className="arrow">→</span>
+          <div className="step">FORGED</div>
+          <span className="arrow">→</span>
+          <div className="step">ANNEALED</div>
+          <span className="arrow">→</span>
+          <div className="step">ROUGH TURNED FOR ROUNDS / MILLED FOR FLATS</div>
+          <span className="arrow">→</span>
+          <div className="step">OIL / AIR QUENCHED</div>
+          <span className="arrow">→</span>
+          <div className="step">DOUBLE TEMPERED</div>
+          <span className="arrow">→</span>
+          <div className="step">MACHINED TO SIZE</div>
+        </div>
       </section>
 
       {/* Steel properties */}
@@ -427,6 +458,27 @@ export default function H11() {
               alt="China Flag"
               className="flag-img mx-3"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Availability */}
+      <section className="availability-info my-4">
+        <div className="container">
+          <h4 className="mb-3">Availability</h4>
+          <p>
+            <strong>Grades in Bold (e.g. H13 )</strong> are kept in stock and
+            supplied on a regular basis. <br />
+            For other grades, we accept <strong>advance orders</strong> on MOQ
+            basis as per size requirements.
+          </p>
+          <div className="note-box mt-3 p-3 rounded">
+            <h5 className="note-title">Additional Services</h5>
+            <p>
+              We also source forgings as per the required grades, size, and
+              supply specifications. Additionally, we have an in-house cutting
+              facility to meet customized requirements.
+            </p>
           </div>
         </div>
       </section>

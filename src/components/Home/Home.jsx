@@ -212,7 +212,7 @@ export default function Home() {
       </div>
 
       {/* Industries section */}
-      <IndustriesSection />
+      {/* <IndustriesSection /> */}
 
       {/* Quality & Infrastructure */}
       <div className="container-fluid quality-infra ">
@@ -375,6 +375,55 @@ export default function Home() {
                 loading="lazy"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* certified section */}
+      <section
+        className="py-5 bg-light trusted-certificates"
+        data-aos="fade-up"
+      >
+        <div className="container text-center">
+          <h3 className="mb-4 text-dark fw-bold">Trusted & Certified</h3>
+          <p className="mb-4 text-muted">
+            Our steel meets the highest international standards. Certified for
+            quality, reliability, and sustainability.
+          </p>
+          <div className="row justify-content-center align-items-center g-4 mt-4">
+            <div className="col-6 col-md-2">
+              <img
+                src="/image/certificate-logo/BSCIC-icon.png"
+                alt="ISO Certified"
+                height={90}
+              />
+            </div>
+            <div className="col-6 col-md-2">
+              <img
+                src="/image/certificate-logo/cii-logo.jpeg"
+                alt="PED Approved"
+                height={90}
+              />
+            </div>
+            <div className="col-6 col-md-2">
+              <img
+                src="/image/certificate-logo/tagma-india-logo.webp"
+                alt="MSME Registered"
+                height={55}
+              />
+            </div>
+            <div className="col-6 col-md-2">
+              <img
+                src="/image/certificate-logo/images.jpeg"
+                alt="Startup India"
+                height={90}
+              />
+            </div>
+          </div>
+          <div className="mt-5">
+            <a href="/certifications" className="btn btn-outline-primary">
+              View All Certificates
+            </a>
           </div>
         </div>
       </section>

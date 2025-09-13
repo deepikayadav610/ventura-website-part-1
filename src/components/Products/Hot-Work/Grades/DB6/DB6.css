@@ -353,6 +353,24 @@ section {
   transform: scale(1.1);
 }
 
+/* availability */
+.availability-info {
+  border-top: 2px solid #393185; 
+  padding-top: 1rem;
+}
+
+.note-box {
+  background: #f8f9fa;
+  border-left: 4px solid #393185; 
+}
+
+.note-title {
+  color: #393185;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+
 /* media queries */
 @media (max-width: 768px) {
   .grade-details {
